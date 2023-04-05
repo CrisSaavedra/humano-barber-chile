@@ -1,0 +1,21 @@
+$breakpoints: ( //mobil first
+    md: 576px,
+    l: 992px,
+);
+
+@mixin media-query($breakpoint){
+    @if map-has-key($breakpoints, $breakpoint ){
+        @media screen and (min-width: map-get($breakpoints,$breakpoint)) {
+            @content;
+        }
+    }@else{
+        @warn "Error media-query"
+    }
+};
+
+@mixin flex-standard($flex,$items,$justify){
+    display: flex;
+    flex-direction: $flex;
+    align-items: $items;
+    justify-content: $justify;
+}

@@ -1,0 +1,36 @@
+@use'../../../sass/mixins' as mix;
+
+.navbar-container{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 2rem;
+    @include mix.flex-standard($flex: row ,$items: center,$justify: space-between);
+
+    .opciones-container{
+        a{
+            img{
+                filter:invert(0%) sepia(4%) saturate(7500%) hue-rotate(134deg) brightness(98%) contrast(106%);
+                     //  color: #000000;
+
+                //  invert(96%) sepia(0%) saturate(7473%) hue-rotate(96deg) brightness(101%) contrast(108%); // color: #ffffff;
+            }
+        }
+        .opcion{
+            display: none;
+            position: absolute;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(14, 14, 14);
+            border-radius: 10% 0% 10% 10%;
+            right: 4rem;
+            height: 15rem;
+            width: 20rem;
+            z-index: 2;
+            a{
+                color: rgb(213, 212, 195);
+            }
+        
+        }
+    }
+}

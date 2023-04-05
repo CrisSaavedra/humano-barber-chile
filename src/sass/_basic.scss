@@ -1,0 +1,47 @@
+:root {
+    --fuentePrincipal: 'Roboto', sans-serif;
+    --primario: #1073BA;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*,*:before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: var(--fuentePrincipal);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+/*GLOBALS*/
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 200;
+    font-family: var(--fuenteSegundaria);
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size: 4.4rem;
+}
+h2{
+    font-size: 3.6rem;
+}
+h3{
+    font-size: 2.8rem;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+a{
+    text-decoration: none;
+    color: azure;
+}
