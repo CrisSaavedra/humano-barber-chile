@@ -311,8 +311,8 @@ template {
   --principalFont: "Antonio", sans-serif;
   --black: #000003;
   --yellow: #c6c621;
-  --hover-yellow: #a4973c;
-  --white: #cecece;
+  --hover-yellow: #665e1f;
+  --white: #bfbfbf;
   --hover-white: #929191;
   --hover-white-2: #727171;
 }
