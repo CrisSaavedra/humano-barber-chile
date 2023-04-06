@@ -2,80 +2,12 @@ import { useEffect } from 'react';
 import logo from '../../../assets/LOGO.webp';
 import burger from '../../../assets/inicio/burgerbtn3.svg';
 import xbtn from '../../../assets/inicio/xbtn2.svg';
+import { animationOptions, animationsBurger, clickBurger, clickClose } from './animations';
+
+
 
 
 export const NavBar = () => {
-
-
-    const clickBurger = () => {
-        let burger = document.getElementById('burger');
-        burger.classList.add('close-burger');
-    }
-
-    const clickClose = () => {
-        let options = document.getElementById('options');
-        options.classList.add('close-options');
-    }
-
-    const animationsBurger = () => {
-        let burger = document.getElementById('burger');
-        let options = document.getElementById('options');
-        let xbtns = document.getElementById('xbtn');
-        burger.addEventListener('animationend', (e) => {
-            if (e.animationName === 'close-burger') {
-                options.classList.remove('d-none');
-                options.classList.add('open-options');
-                burger.classList.add('d-none');
-            } else {
-                if (e.animationName === 'open-burger') {
-                    burger.classList.remove('open-burger');
-                    options.classList.add('d-none');
-                    options.classList.remove('open-options');
-                    options.classList.remove('close-options');
-                    xbtns.classList.remove('options-in');
-                    xbtns.classList.add('d-none');
-                }
-            }
-
-        })
-    }
-
-
-    const animationOptions = () => {
-        let burger = document.getElementById('burger');
-        let options = document.getElementById('options');
-        let option = document.getElementById('option');
-        let xbtns = document.getElementById('xbtn');
-        options.addEventListener('animationend', (e) => {
-            if (e.animationName === 'open-options') {
-                xbtns.classList.remove('d-none');
-                xbtns.classList.add('options-in');
-                burger.classList.remove('close-burger');
-
-                for (let child of option.children) {
-                    child.classList.remove('d-none');
-                    child.classList.add('options-in');
-                }
-
-            } else {
-                if (e.animationName === 'close-options') {
-
-                    xbtns.classList.remove('options-in');
-
-                    burger.classList.remove('d-none');
-                    burger.classList.add('open-burger');
-                    for (let child of option.children) {
-                        child.classList.add('d-none');
-                        child.classList.remove('options-in');
-                    }
-                }
-            }
-
-
-        })
-    }
-
-
 
     useEffect(() => {
         animationsBurger();
@@ -88,19 +20,30 @@ export const NavBar = () => {
             <img src={logo} alt="" width={80} />
             <div className="opciones-container">
 
-                <a href="#" onClick={e => clickBurger()}  ><img id='burger' src={burger} alt="burger btn" width={50} /></a>
+                <a href="#" onClick={e => clickBurger()}>
+                    <svg width={50} enableBackground="new 0 0 12 12" id="burger" version="1.1" viewBox="0 0 12 12"><g><rect fill="#cecece" height="1" width="11" x="0.5" y="5.5" /><rect fill="#cecece" height="1" width="11" x="0.5" y="2.5" /><rect fill="#cecece" height="1" width="11" x="0.5" y="8.5" /></g></svg>
+                </a>
 
+
+                {/* <img id='burger' src={burger} alt="burger btn" width={50} /> */}
                 <div id='options' className='options d-none'>
 
-                    <a href="#" onClick={e => clickClose()}><img src={xbtn} alt="x btn" width={45} id='xbtn' className='d-none' /></a>
+                    <a href="#" onClick={e => clickClose()}>
+                        <svg width={45} className="ci-primary d-none" id='xbtn' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <polygon fill="#cecece" points="427.314 107.313 404.686 84.687 256 233.373 107.314 84.687 84.686 107.313 233.373 256 84.686 404.687 107.314 427.313 256 278.627 404.686 427.313 427.314 404.687 278.627 256 427.314 107.313" />
+                        </svg>
+                    </a>
 
                     <div id='option' className='option'>
-                        <a href="#" className='d-none'>opcione</a>
-                        <a href="#" className='d-none'>opcione2</a>
-                        <a href="#" className='d-none'>opcione3</a>
+                        <a href="#" className='d-none'>Inicio</a>
+                        <a href="#" className='d-none'>Nosotros</a>
+                        <a href="#" className='d-none'>Productos</a>
+                        <a href="#" className='d-none'>Direccion</a>
+                        <a href="#" className='d-none'>Horario</a>
+                        <a href="#" className='d-none'>Agendar</a>
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }

@@ -5,21 +5,25 @@
     width: 90%;
     margin: 0 auto;
     padding-top: 2rem;
-    max-width:200rem;
+    max-width: 200rem;
     margin: 0 auto;
     @include mix.flex-standard($flex: row, $items: center, $justify: space-between);
 
     .opciones-container {
-        a {
-            img {
-                margin-top: 4px;
-                filter: invert(0%) sepia(4%) saturate(7500%) hue-rotate(134deg) brightness(98%) contrast(106%);
-                //  color: #000000;
-                //  invert(96%) sepia(0%) saturate(7473%) hue-rotate(96deg) brightness(101%) contrast(108%); // color: #ffffff;
 
+
+        a {
+            svg {
+                margin-top: 4px;
+
+                &:hover {
+                    rect {
+                        transition: fill 0.1s linear;
+                        fill: var(--hover-white-2);
+                    }
+                }
             }
         }
-
 
 
         .options {
@@ -33,10 +37,16 @@
             max-width: 40rem;
             z-index: 2;
 
-            img {
+            svg {
                 margin-top: 4rem;
                 margin-left: -50%;
-                filter: invert(96%) sepia(0%) saturate(7473%) hue-rotate(96deg) brightness(101%) contrast(108%);
+
+                &:hover {
+                    polygon {
+                        transition: fill 0.1s linear;
+                        fill: var(--hover-white);
+                    }
+                }
             }
 
             .option {
@@ -47,12 +57,27 @@
                 gap: 2rem;
 
                 a {
-                    color: rgb(255, 255, 255);
+                    transition: color 0.1s linear;
+                    color: var(--white);
+                    font-weight: 400;
+                    font-size: 2.3rem;
+
+                    &:hover {
+                        color: var(--hover-white);
+                    }
                 }
 
-                @for $i from 2 through 3 {
+                @for $i from 2 through 6 {
                     a:nth-child(#{$i}) {
                         animation-delay: $i * (1.3s / 18);
+                    }
+                }
+
+                a:nth-child(6) {
+                    color: var(--yellow);
+
+                    &:hover {
+                        color: var(--hover-yellow);
                     }
                 }
 
@@ -69,11 +94,13 @@
     display: none;
 }
 
+
+
+//ANIMATIONS--------------
+
 .close-burger {
     animation: close-burger 0.4s ease-in forwards;
 }
-
-
 
 @keyframes close-burger {
     0% {
@@ -88,13 +115,13 @@
 }
 
 .open-burger {
-    animation: open-burger 0.4s ease-out forwards;
+    animation: open-burger 0.3s ease-out forwards;
 }
 
 @keyframes open-burger {
-    0%{
+    0% {
         transform: translateX(45rem);
-        
+
     }
 
     100% {
@@ -105,13 +132,14 @@
 
 .open-options {
     @include mix.flex-standard($flex: column, $items: end, $justify: start);
-    animation: open-options 0.4s ease-out ;
+    animation: open-options 0.4s ease-out;
 }
 
 @keyframes open-options {
-    0%{
+    0% {
         transform: translate(45rem);
     }
+
     100% {
         transform: translate(0);
     }
@@ -125,7 +153,7 @@
 }
 
 @keyframes options-in {
-    
+
 
     100% {
         transform: translateX(0);
@@ -138,13 +166,9 @@
 }
 
 @keyframes close-options {
-    0%{
-       
-        // transform: translateX(30rem);
-    }
-  
+
     100% {
-       
+
         transform: translateX(45rem);
     }
 }

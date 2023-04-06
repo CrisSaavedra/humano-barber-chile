@@ -1,4 +1,4 @@
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@200;300;400;500;600;700&display=swap"); /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
 /**
@@ -308,8 +308,13 @@ template {
 }
 
 :root {
-  --fuentePrincipal: "Roboto", sans-serif;
-  --primario: #1073BA;
+  --principalFont: "Antonio", sans-serif;
+  --black: #000003;
+  --yellow: #c6c621;
+  --hover-yellow: #a4973c;
+  --white: #cecece;
+  --hover-white: #929191;
+  --hover-white-2: #727171;
 }
 
 html {
@@ -317,20 +322,27 @@ html {
   font-size: 62.5%;
 }
 
-*, *:before, *::after {
+*,
+*:before,
+*::after {
   box-sizing: inherit;
 }
 
 body {
-  font-family: var(--fuentePrincipal);
+  font-family: var(--principalFont);
   font-size: 1.6rem;
   line-height: 1.5;
 }
 
 /*GLOBALS*/
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 200;
-  font-family: var(--fuenteSegundaria);
+  font-family: var(--principalFont);
   margin: 0;
   padding: 0;
 }
@@ -368,9 +380,12 @@ a {
   align-items: center;
   justify-content: space-between;
 }
-.navbar-container .opciones-container a img {
+.navbar-container .opciones-container a svg {
   margin-top: 4px;
-  filter: invert(0%) sepia(4%) saturate(7500%) hue-rotate(134deg) brightness(98%) contrast(106%);
+}
+.navbar-container .opciones-container a svg:hover rect {
+  transition: fill 0.1s linear;
+  fill: var(--hover-white-2);
 }
 .navbar-container .opciones-container .options {
   position: absolute;
@@ -383,10 +398,13 @@ a {
   max-width: 40rem;
   z-index: 2;
 }
-.navbar-container .opciones-container .options img {
+.navbar-container .opciones-container .options svg {
   margin-top: 4rem;
   margin-left: -50%;
-  filter: invert(96%) sepia(0%) saturate(7473%) hue-rotate(96deg) brightness(101%) contrast(108%);
+}
+.navbar-container .opciones-container .options svg:hover polygon {
+  transition: fill 0.1s linear;
+  fill: var(--hover-white);
 }
 .navbar-container .opciones-container .options .option {
   width: 100%;
@@ -399,13 +417,34 @@ a {
   gap: 2rem;
 }
 .navbar-container .opciones-container .options .option a {
-  color: rgb(255, 255, 255);
+  transition: color 0.1s linear;
+  color: var(--white);
+  font-weight: 400;
+  font-size: 2.3rem;
+}
+.navbar-container .opciones-container .options .option a:hover {
+  color: var(--hover-white);
 }
 .navbar-container .opciones-container .options .option a:nth-child(2) {
   animation-delay: 0.1444444444s;
 }
 .navbar-container .opciones-container .options .option a:nth-child(3) {
   animation-delay: 0.2166666667s;
+}
+.navbar-container .opciones-container .options .option a:nth-child(4) {
+  animation-delay: 0.2888888889s;
+}
+.navbar-container .opciones-container .options .option a:nth-child(5) {
+  animation-delay: 0.3611111111s;
+}
+.navbar-container .opciones-container .options .option a:nth-child(6) {
+  animation-delay: 0.4333333333s;
+}
+.navbar-container .opciones-container .options .option a:nth-child(6) {
+  color: var(--yellow);
+}
+.navbar-container .opciones-container .options .option a:nth-child(6):hover {
+  color: var(--hover-yellow);
 }
 
 .d-none {
@@ -427,7 +466,7 @@ a {
   }
 }
 .open-burger {
-  animation: open-burger 0.4s ease-out forwards;
+  animation: open-burger 0.3s ease-out forwards;
 }
 
 @keyframes open-burger {
