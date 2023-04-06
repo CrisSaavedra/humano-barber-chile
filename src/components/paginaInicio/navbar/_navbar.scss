@@ -5,6 +5,8 @@
     width: 90%;
     margin: 0 auto;
     padding-top: 2rem;
+    max-width:300rem;
+    margin: 0 auto;
     @include mix.flex-standard($flex: row, $items: center, $justify: space-between);
 
     .opciones-container {
