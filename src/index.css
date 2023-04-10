@@ -311,10 +311,10 @@ template {
   --principalFont: "Antonio", sans-serif;
   --black: #000003;
   --yellow: #c6c621;
-  --hover-yellow: #665e1f;
-  --white: #bfbfbf;
-  --hover-white: #929191;
-  --hover-white-2: #727171;
+  --hover-yellow: #ac9d32;
+  --white: #dedede;
+  --hover-white: #949494;
+  --hover-white-2: #898989;
 }
 
 html {
@@ -380,29 +380,32 @@ a {
   align-items: center;
   justify-content: space-between;
 }
-.navbar-container .opciones-container a svg {
+.navbar-container .opciones-container .burger {
+  z-index: 100;
+}
+.navbar-container .opciones-container .burger svg {
   margin-top: 4px;
 }
-.navbar-container .opciones-container a svg:hover rect {
+.navbar-container .opciones-container .burger svg:hover rect {
   transition: fill 0.1s linear;
   fill: var(--hover-white-2);
 }
 .navbar-container .opciones-container .options {
+  z-index: 100;
   position: absolute;
-  background-color: rgb(14, 14, 14);
+  background-color: var(--black);
   border-radius: 1% 0% 0% 1%;
   right: 0rem;
   top: 0;
   height: 100vh;
   width: 50%;
   max-width: 40rem;
-  z-index: 2;
 }
-.navbar-container .opciones-container .options svg {
+.navbar-container .opciones-container .options .xbtn svg {
   margin-top: 4rem;
   margin-left: -50%;
 }
-.navbar-container .opciones-container .options svg:hover polygon {
+.navbar-container .opciones-container .options .xbtn svg:hover polygon {
   transition: fill 0.1s linear;
   fill: var(--hover-white);
 }
@@ -420,7 +423,7 @@ a {
   transition: color 0.1s linear;
   color: var(--white);
   font-weight: 400;
-  font-size: 2.3rem;
+  font-size: 2.2rem;
 }
 .navbar-container .opciones-container .options .option a:hover {
   color: var(--hover-white);
@@ -445,6 +448,88 @@ a {
 }
 .navbar-container .opciones-container .options .option a:nth-child(6):hover {
   color: var(--hover-yellow);
+}
+.navbar-container .social-container {
+  width: 100%;
+  height: 1rem;
+  margin-top: 6rem;
+  margin-bottom: 0rem;
+}
+.navbar-container .social-container .divition-line {
+  animation-delay: 1s;
+  margin: 0 auto;
+  width: 80%;
+  background-color: var(--yellow);
+  opacity: 0.3;
+  height: 0.1rem;
+}
+.navbar-container .social-container .social-medias {
+  width: 100%;
+  margin-top: 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.navbar-container .social-container .social-medias a {
+  animation-delay: 1s;
+}
+.navbar-container .social-container .social-medias svg {
+  margin: 0;
+}
+.navbar-container .social-container .social-medias svg path {
+  fill: var(--hover-white);
+  opacity: 0.7;
+}
+.navbar-container .social-container .social-medias svg:hover path {
+  fill: var(--hover-white);
+  opacity: 0.8;
+}
+@media screen and (min-width: 576px) {
+  .navbar-container .logo {
+    width: 10rem;
+  }
+  .navbar-container .opciones-container .burger svg {
+    margin-top: 1rem;
+    width: 50px;
+  }
+  .navbar-container .opciones-container .options .xbtn svg {
+    width: 50px;
+  }
+  .navbar-container .opciones-container .options .option a {
+    margin-top: 1rem;
+    font-weight: 400;
+    font-size: 2.7rem;
+  }
+  .navbar-container .opciones-container .social-container {
+    margin-top: 10rem;
+  }
+  .navbar-container .opciones-container .social-container .social-medias svg {
+    width: 40px;
+  }
+}
+@media screen and (min-width: 1124px) {
+  .navbar-container .logo {
+    width: 13rem;
+  }
+  .navbar-container .opciones-container .burger svg {
+    margin-top: 1rem;
+    width: 55px;
+  }
+  .navbar-container .opciones-container .options .xbtn svg {
+    margin-top: 5.6rem;
+    width: 60px;
+  }
+  .navbar-container .opciones-container .options .option a {
+    font-weight: 400;
+    font-size: 2.9rem;
+  }
+  .navbar-container .opciones-container .social-container {
+    margin-top: 10rem;
+  }
+  .navbar-container .opciones-container .social-container .social-medias svg {
+    width: 40px;
+  }
 }
 
 .d-none {
@@ -514,6 +599,86 @@ a {
     transform: translateX(45rem);
   }
 }
+.container-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 82vh;
+  color: var(--white);
+}
+.container-title .title {
+  text-align: center;
+  position: relative;
+  height: 12rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.container-title .title .title-1 {
+  position: absolute;
+  font-size: 4rem;
+  top: 0;
+  font-weight: 700;
+}
+.container-title .title .title-2 {
+  position: absolute;
+  font-size: 8rem;
+  margin-top: 3rem;
+  font-weight: 700;
+}
+.container-title .subtitle {
+  color: var(--white);
+  font-size: 2.5rem;
+  margin-top: 1rem;
+  font-weight: 500;
+  transition: color 0.2s;
+  border-bottom: 1px solid var(--yellow);
+}
+.container-title .subtitle:hover {
+  opacity: 0.7;
+}
+@media screen and (min-width: 576px) {
+  .container-title {
+    height: 80vh;
+  }
+  .container-title .title {
+    height: 20rem;
+  }
+  .container-title .title .title-1 {
+    font-size: 5rem;
+  }
+  .container-title .title .title-2 {
+    font-size: 12rem;
+    margin-top: 2.5rem;
+  }
+  .container-title .subtitle {
+    margin-top: 0;
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 1124px) {
+  .container-title {
+    height: 75vh;
+  }
+  .container-title .title {
+    height: 28rem;
+  }
+  .container-title .title .title-1 {
+    font-size: 8rem;
+  }
+  .container-title .title .title-2 {
+    font-size: 18rem;
+    margin-top: 4rem;
+  }
+  .container-title .subtitle {
+    margin-top: 0rem;
+    font-size: 4rem;
+  }
+}
+
 .inicio-container {
   overflow: hidden;
   position: relative;
@@ -530,6 +695,18 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   filter: brightness(0.6);
+}
+.inicio-container .social-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  width: 82%;
+  margin: 0 auto;
+  gap: 2rem;
+}
+.inicio-container .social-container a svg path {
+  fill: var(--white);
 }
 
 /*# sourceMappingURL=index.css.map */

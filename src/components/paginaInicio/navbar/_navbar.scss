@@ -9,10 +9,12 @@
     margin: 0 auto;
     @include mix.flex-standard($flex: row, $items: center, $justify: space-between);
 
+
     .opciones-container {
 
+        .burger {
+            z-index: 100;
 
-        a {
             svg {
                 margin-top: 4px;
 
@@ -25,19 +27,18 @@
             }
         }
 
-
         .options {
+            z-index: 100;
             position: absolute;
-            background-color: rgb(14, 14, 14);
+            background-color: var(--black);
             border-radius: 1% 0% 0% 1%;
             right: 0rem;
             top: 0;
             height: 100vh;
             width: 50%;
             max-width: 40rem;
-            z-index: 2;
 
-            svg {
+            .xbtn svg {
                 margin-top: 4rem;
                 margin-left: -50%;
 
@@ -60,7 +61,7 @@
                     transition: color 0.1s linear;
                     color: var(--white);
                     font-weight: 400;
-                    font-size: 2.3rem;
+                    font-size: 2.2rem;
 
                     &:hover {
                         color: var(--hover-white);
@@ -85,9 +86,153 @@
 
 
         }
+    }
 
+    .social-container {
+        // background-color: azure;
+        width: 100%;
+        height: 1rem;
+        margin-top: 6rem;
+        margin-bottom: 0rem;
+
+        .divition-line {
+            animation-delay: 1s;
+            margin: 0 auto;
+            width: 80%;
+            background-color: var(--yellow);
+            opacity: 0.3;
+            height: 0.1rem;
+        }
+
+
+        .social-medias {
+            width: 100%;
+            margin-top: 10%;
+            @include mix.flex-standard($flex: row, $items: center, $justify: space-evenly);
+
+            a {
+                animation-delay: 1s;
+            }
+
+            svg {
+                margin: 0;
+
+                path {
+                    fill: var(--hover-white);
+                    opacity: 0.7;
+
+                }
+
+                &:hover {
+                    path {
+                        fill: var(--hover-white);
+                        opacity: 0.8;
+
+                    }
+                }
+            }
+        }
 
     }
+
+
+
+
+    //------MEDIA QUERYS--------
+    @include mix.media-query(md) {
+
+        .logo {
+            width: 10rem;
+        }
+
+        .opciones-container {
+            .burger {
+                svg {
+                    margin-top: 1rem;
+                    width: 50px;
+                }
+            }
+
+            .options {
+
+                .xbtn svg {
+
+                    width: 50px;
+                }
+
+                .option {
+                    a {
+                        margin-top: 1rem;
+                        font-weight: 400;
+                        font-size: 2.7rem;
+                    }
+                }
+            }
+
+
+            .social-container {
+                margin-top: 10rem;
+
+                .social-medias {
+
+                    svg {
+                        width: 40px;
+                    }
+                }
+
+
+            }
+
+
+        }
+    }
+
+    @include mix.media-query(l) {
+
+        .logo {
+            width: 13rem;
+        }
+
+        .opciones-container {
+            .burger {
+                svg {
+                    margin-top: 1rem;
+                    width: 55px;
+                }
+            }
+
+            .options {
+
+                .xbtn svg {
+                    margin-top: 5.6rem;
+                    width: 60px;
+                }
+
+                .option {
+                    a {
+
+                        font-weight: 400;
+                        font-size: 2.9rem;
+                    }
+                }
+            }
+
+
+            .social-container {
+                margin-top: 10rem;
+
+                .social-medias {
+
+                    svg {
+                        width: 40px;
+                    }
+                }
+
+
+            }
+        }
+    }
+
 }
 
 .d-none {

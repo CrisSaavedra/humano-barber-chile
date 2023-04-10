@@ -1,0 +1,93 @@
+@use'../../../sass/mixins' as mix;
+
+.container-title {
+
+    @include mix.flex-standard($flex: column, $items: center, $justify: center);
+    height: 82vh;
+    color: var(--white);
+
+    .title {
+        text-align: center;
+        position: relative;
+        height: 12rem;
+        width: 100%;
+        // background-color: rgba(133, 139, 139, 0.488);
+        @include mix.flex-standard($flex: column, $items: center, $justify: space-between);
+
+        .title-1 {
+            position: absolute;
+            font-size: 4rem;
+            top: 0;
+            font-weight: 700;
+        }
+
+        .title-2 {
+            position: absolute;
+            font-size: 8rem;
+            margin-top: 3rem;
+            font-weight: 700;
+        }
+
+    }
+
+    .subtitle {
+        color: var(--white);
+        font-size: 2.5rem;
+        margin-top: 1rem;
+        font-weight: 500;
+        transition: color 0.2s;
+        border-bottom: 1px solid var(--yellow);
+
+        &:hover{
+            opacity: 0.7;
+        }
+        
+    }
+
+
+    @include mix.media-query(md) {
+        height: 80vh;
+    
+        .title{
+            // background-color: rgba(0, 255, 255, 0.262);
+            height: 20rem;
+            .title-1{
+                font-size: 5rem;
+            }
+
+            .title-2{
+                font-size: 12rem;
+                margin-top: 2.5rem;
+            }
+        }
+
+
+        .subtitle {
+            margin-top: 0;
+            font-size: 3rem;
+    
+        }
+    }
+
+    @include mix.media-query(l) {
+        height: 75vh;
+        .title{
+            // background-color: rgba(0, 255, 255, 0.262);
+            height: 28rem;
+            .title-1{
+                font-size: 8rem;
+            }
+
+            .title-2{
+                font-size: 18rem;
+                margin-top: 4rem;
+            }
+        }
+
+
+        .subtitle {
+            margin-top: 0rem;
+            font-size: 4rem;
+        }
+    }
+}
