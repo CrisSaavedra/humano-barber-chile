@@ -769,7 +769,7 @@ a {
   margin-bottom: 2rem;
   font-size: 2.7rem;
   font-weight: 600;
-  color: var(--brown);
+  color: var(--yellow);
   max-width: 90%;
 }
 .nosotros-container .text-nosotros p {
@@ -780,7 +780,7 @@ a {
   max-width: 90%;
 }
 .nosotros-container .text-nosotros p:nth-child(5) {
-  color: var(--brown);
+  color: var(--yellow);
 }
 @media screen and (min-width: 576px) {
   .nosotros-container .text-nosotros h3 {
@@ -800,7 +800,7 @@ a {
   .nosotros-container .text-nosotros h3 {
     margin-top: 5rem;
     margin-bottom: 6rem;
-    font-size: 3.7rem;
+    font-size: 3.8rem;
     font-weight: 600;
     max-width: 90%;
   }
@@ -809,6 +809,73 @@ a {
     font-size: 2.5rem;
     max-width: 90%;
   }
+}
+
+.horario-container {
+  background-color: var(--white);
+  width: 100%;
+  height: 100vh;
+}
+.horario-container .container-background {
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  max-width: 142rem;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.horario-container .container-background .background-1 {
+  width: 85%;
+  height: 85%;
+  background-color: var(--yellow);
+  position: absolute;
+  margin-bottom: 3rem;
+  margin-right: 3rem;
+}
+.horario-container .container-background .background-2 {
+  z-index: 10;
+  background-color: var(--black);
+  width: 85%;
+  height: 85%;
+  margin-left: 3rem;
+  margin-top: 3rem;
+  opacity: 0.95;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.horario-container .container-background .background-2 h3 {
+  color: var(--yellow);
+  font-weight: 600;
+  margin-bottom: 6rem;
+}
+.horario-container .container-background .background-2 .horario {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+.horario-container .container-background .background-2 .horario .row-horario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.horario-container .container-background .background-2 .horario .row-horario p {
+  font-size: 1.8rem;
+}
+.horario-container .container-background .background-2 .horario .row-horario .line-horario {
+  border: 1px solid var(--yellow);
+  width: 1px;
+  height: 39rem;
+  margin-top: 3rem;
 }
 
 /*# sourceMappingURL=index.css.map */
