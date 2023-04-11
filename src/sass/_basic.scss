@@ -1,14 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Antonio:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Khojki:wght@400;500;600;700&display=swap');
 
- 
 :root {
     --principalFont: 'Antonio', sans-serif;
+    --secondFont: 'Anuphan', sans-serif;
+    --3font: 'Noto Serif Khojki', serif;
     --black: #000003;
     --yellow: #c6c621;
     --hover-yellow: #ac9d32;
     --white: #dedede;
     --hover-white: #949494; 
     --hover-white-2: #898989;
+    --background-black: #000000d0;
+    --brown:  #877425;
 
 }
 

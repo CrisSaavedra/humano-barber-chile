@@ -50,7 +50,7 @@ export const NavBar = () => {
                         <a href="#" className='d-none'>Horario</a>
                         <a href="#" className='d-none'>Agendar</a>
                     </div>
-                    <div className='social-container options-in'>
+                    <div className='social-container-2 options-in'>
                         <div className='divition-line options-in'></div>
 
                         <div className='social-medias'>

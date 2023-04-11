@@ -9,23 +9,14 @@
     position: relative;
     width: 100%;
     height: 100vh;
+    max-width: 225rem;
+    margin: 0 auto;
 
-    .background-img {
-        position: absolute;
-        width: 100%;
-        height: 100vh;
-        z-index: -100;
-        background-image: url('./assets/inicio/fondoInicio.webp');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        filter: brightness(0.6);
-    }
 
 
     .social-container {
         @include mix.flex-standard($flex: row, $items: center, $justify: end);
-        width: 82%;
+        width: 90%;
         margin: 0 auto;
         gap: 2rem;
 

@@ -78,7 +78,7 @@
                     color: var(--yellow);
 
                     &:hover {
-                        color: var(--hover-yellow);
+                        color: var(--brown);
                     }
                 }
 
@@ -88,7 +88,7 @@
         }
     }
 
-    .social-container {
+    .social-container-2 {
         // background-color: azure;
         width: 100%;
         height: 1rem;
@@ -220,6 +220,7 @@
 
             .social-container {
                 margin-top: 10rem;
+                
 
                 .social-medias {
 

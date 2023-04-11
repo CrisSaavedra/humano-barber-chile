@@ -1,6 +1,6 @@
 $breakpoints: ( //mobil first
     md: 576px,
-    l: 1124px,
+    l: 1200px,
 );
 
 @mixin media-query($breakpoint){
