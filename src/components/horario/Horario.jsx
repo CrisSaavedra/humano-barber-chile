@@ -2,7 +2,7 @@
 
 export const Horario = () => {
     return (
-        <div className="horario-container">
+        <div id="horario" className="horario-container">
             <div className="container-background">
                 <div className="background-1"></div>
                 <div className="background-2">

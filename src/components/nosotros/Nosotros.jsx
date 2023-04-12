@@ -2,7 +2,7 @@
 
 export const Nosotros = () => {
     return (
-        <div className='nosotros-container'>
+        <div id="nosotros" className='nosotros-container'>
             <div className="nosotros-img">
 
                 <div className="text-nosotros">

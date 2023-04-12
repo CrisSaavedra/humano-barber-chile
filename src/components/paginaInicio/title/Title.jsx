@@ -8,7 +8,7 @@ export const Title = () => {
                 <h1 className='title-2'>BARBER</h1>
             </div>
             <div className='subtitle'></div>
-            <a className='subtitle' href="#">Agendar Hora</a>
+            <a className='subtitle' href="https://humanobarberchile.agendapro.com/cl/workflow?local=27344" target='_blank'>Agendar Hora</a>
         </div>
     )
 }

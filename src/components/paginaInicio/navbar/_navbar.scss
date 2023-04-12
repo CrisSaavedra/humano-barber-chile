@@ -2,241 +2,265 @@
 
 .navbar-container {
 
-    width: 90%;
+    width: 100%;
+    height: 12rem;
     margin: 0 auto;
-    padding-top: 2rem;
     max-width: 200rem;
-    margin: 0 auto;
-    @include mix.flex-standard($flex: row, $items: center, $justify: space-between);
+    z-index: 100;
+    position: relative;
+    // background-color: black;
+ 
 
-
-    .opciones-container {
-
-        .burger {
-            position: fixed;
-            z-index: 100;
-            top: 3.6rem;
-            right: 2rem;
-            svg {
-                // margin-top: 4px;
-
-                &:hover {
-                    rect {
-                        transition: fill 0.1s linear;
-                        fill: var(--hover-white-2);
-                    }
-                }
-            }
-        }
-
-        .options {
-            z-index: 100;
-            position: fixed;
-            background-color: var(--black);
-            border-radius: 1% 0% 0% 1%;
-            right: 0rem;
-            top: 0;
-            height: 100vh;
-            width: 50%;
-            max-width: 40rem;
-
-            .xbtn svg {
-                margin-top: 4rem;
-                margin-left: -50%;
-
-                &:hover {
-                    polygon {
-                        transition: fill 0.1s linear;
-                        fill: var(--hover-white);
-                    }
-                }
-            }
-
-            .option {
-                width: 100%;
-                margin-top: 2rem;
-                margin-right: -3rem;
-                @include mix.flex-standard($flex: column, $items: start, $justify: center);
-                gap: 2rem;
-
-                a {
-                    transition: color 0.1s linear;
-                    color: var(--white);
-                    font-weight: 500;
-                    font-size: 2.2rem;
-                    font-family: var(--3font);
-
-                    &:hover {
-                        color: var(--hover-white);
-                    }
-                }
-
-                @for $i from 2 through 6 {
-                    a:nth-child(#{$i}) {
-                        animation-delay: $i * (1.3s / 18);
-                    }
-                }
-
-                a:nth-child(6) {
-                    color: var(--yellow);
-
-                    &:hover {
-                        color: var(--brown);
-                    }
-                }
-
-            }
-
-
-        }
-    }
-
-    .social-container-2 {
-        // background-color: azure;
-        width: 100%;
-        height: 1rem;
-        margin-top: 6rem;
-        margin-bottom: 0rem;
-
-        .divition-line {
-            animation-delay: 1s;
+    .background-container {
+        padding-top: 1rem;
+        padding-bottom: 0rem;
+        position: fixed;
+        width: inherit;
+        transition: all 0.3s;
+       
+    
+        .position-container {
+            @include mix.flex-standard($flex: row, $items: center, $justify: space-between);
+            width: 90%;
             margin: 0 auto;
-            width: 80%;
-            background-color: var(--yellow);
-            opacity: 0.3;
-            height: 0.1rem;
-        }
+            margin-bottom: 1rem;
 
+            .opciones-container {
 
-        .social-medias {
-            width: 100%;
-            margin-top: 10%;
-            @include mix.flex-standard($flex: row, $items: center, $justify: space-evenly);
+                .burger {
+                    position: relative;
+                    z-index: 100;
 
-            a {
-                animation-delay: 1s;
-            }
+                    // top: 3.6rem;
+                    // right: 2rem;
+                    svg {
+                        margin-top: 4px;
 
-            svg {
-                margin: 0;
-
-                path {
-                    fill: var(--hover-white);
-                    opacity: 0.7;
-
-                }
-
-                &:hover {
-                    path {
-                        fill: var(--hover-white);
-                        opacity: 0.8;
-
+                        &:hover {
+                            rect {
+                                transition: fill 0.1s linear;
+                                fill: var(--hover-white-2);
+                            }
+                        }
                     }
                 }
+
+                .options {
+                    z-index: 100;
+                    position: absolute;
+                    background-color: var(--black);
+                    border-radius: 1% 0% 0% 1%;
+                    right: 0rem;
+                    top: 0;
+                    height: 100vh;
+                    width: 50%;
+                    max-width: 40rem;
+
+                    .xbtn svg {
+                        margin-top: 4rem;
+                        margin-left: -50%;
+
+                        &:hover {
+                            polygon {
+                                transition: fill 0.1s linear;
+                                fill: var(--hover-white);
+                            }
+                        }
+                    }
+
+                    .option {
+                        width: 100%;
+                        margin-top: 2rem;
+                        margin-right: -3rem;
+                        @include mix.flex-standard($flex: column, $items: start, $justify: center);
+                        gap: 2rem;
+
+                        a {
+                            transition: color 0.1s linear;
+                            color: var(--white);
+                            font-weight: 500;
+                            font-size: 2.2rem;
+                            font-family: var(--3font);
+
+                            &:hover {
+                                color: var(--hover-white);
+                            }
+                        }
+
+                        @for $i from 2 through 6 {
+                            a:nth-child(#{$i}) {
+                                animation-delay: $i * (1.3s / 18);
+                            }
+                        }
+
+                        a:nth-child(6) {
+                            color: var(--yellow);
+
+                            &:hover {
+                                color: var(--brown);
+                            }
+                        }
+
+                    }
+
+
+                }
+            }
+
+            .social-container-2 {
+                // background-color: azure;
+                width: 100%;
+                height: 1rem;
+                margin-top: 6rem;
+                margin-bottom: 0rem;
+
+                .divition-line {
+                    animation-delay: 1s;
+                    margin: 0 auto;
+                    width: 80%;
+                    background-color: var(--yellow);
+                    opacity: 0.3;
+                    height: 0.1rem;
+                }
+
+
+                .social-medias {
+                    width: 100%;
+                    margin-top: 10%;
+                    @include mix.flex-standard($flex: row, $items: center, $justify: space-evenly);
+
+                    a {
+                        animation-delay: 1s;
+                    }
+
+                    svg {
+                        margin: 0;
+
+                        path {
+                            fill: var(--hover-white);
+                            opacity: 0.7;
+
+                        }
+
+                        &:hover {
+                            path {
+                                fill: var(--hover-white);
+                                opacity: 0.8;
+
+                            }
+                        }
+                    }
+                }
+
             }
         }
-
     }
-
 
 
 
     //------MEDIA QUERYS--------
     @include mix.media-query(md) {
 
-        .logo {
-            width: 10rem;
-        }
-
-        .opciones-container {
-            .burger {
-                svg {
-                    margin-top: 1rem;
-                    width: 50px;
-                }
-            }
-
-            .options {
-
-                .xbtn svg {
-
-                    width: 50px;
+        .background-container {
+            .position-container {
+                .logo {
+                    width: 10rem;
                 }
 
-                .option {
-                    a {
-                        margin-top: 1rem;
-                        font-weight: 500;
-                        font-size: 2.7rem;
+                .opciones-container {
+                    .burger {
+                        svg {
+                            margin-top: 1rem;
+                            width: 50px;
+                        }
                     }
-                }
-            }
 
+                    .options {
 
-            .social-container {
-                margin-top: 10rem;
+                        .xbtn svg {
 
-                .social-medias {
+                            width: 50px;
+                        }
 
-                    svg {
-                        width: 40px;
+                        .option {
+                            a {
+                                margin-top: 1rem;
+                                font-weight: 500;
+                                font-size: 2.7rem;
+                            }
+                        }
                     }
+
+
+                    .social-container {
+                        margin-top: 10rem;
+
+                        .social-medias {
+
+                            svg {
+                                width: 40px;
+                            }
+                        }
+
+
+                    }
+
+
                 }
-
-
             }
-
-
         }
     }
 
     @include mix.media-query(l) {
+        .background-container {
+            .position-container {
 
-        .logo {
-            width: 13rem;
-        }
-
-        .opciones-container {
-            .burger {
-                svg {
-                    margin-top: 1rem;
-                    width: 55px;
-                }
-            }
-
-            .options {
-
-                .xbtn svg {
-                    margin-top: 5.6rem;
-                    width: 60px;
+                .logo {
+                    width: 13rem;
                 }
 
-                .option {
-                    a {
+                .opciones-container {
+                    .burger {
+                        svg {
+                            margin-top: 1rem;
+                            width: 55px;
+                        }
+                    }
 
-                        font-weight: 500;
-                        font-size: 2.9rem;
+                    .options {
+
+                        .xbtn svg {
+                            margin-top: 5.6rem;
+                            width: 60px;
+                        }
+
+                        .option {
+                            a {
+
+                                font-weight: 500;
+                                font-size: 2.9rem;
+                            }
+                        }
+                    }
+
+
+                    .social-container {
+                        margin-top: 10rem;
+
+
+                        .social-medias {
+
+                            svg {
+                                width: 40px;
+                            }
+                        }
+
+
                     }
                 }
-            }
-
-
-            .social-container {
-                margin-top: 10rem;
-                
-
-                .social-medias {
-
-                    svg {
-                        width: 40px;
-                    }
-                }
-
-
             }
         }
     }
-
 }
 
 .d-none {

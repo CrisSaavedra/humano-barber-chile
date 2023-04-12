@@ -389,29 +389,43 @@ a {
 }
 
 .navbar-container {
-  width: 90%;
+  width: 100%;
+  height: 12rem;
   margin: 0 auto;
-  padding-top: 2rem;
   max-width: 200rem;
-  margin: 0 auto;
+  z-index: 100;
+  position: relative;
+}
+.navbar-container .background-container {
+  padding-top: 1rem;
+  padding-bottom: 0rem;
+  position: fixed;
+  width: inherit;
+  transition: all 0.3s;
+}
+.navbar-container .background-container .position-container {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 1rem;
 }
-.navbar-container .opciones-container .burger {
-  position: fixed;
+.navbar-container .background-container .position-container .opciones-container .burger {
+  position: relative;
   z-index: 100;
-  top: 3.6rem;
-  right: 2rem;
 }
-.navbar-container .opciones-container .burger svg:hover rect {
+.navbar-container .background-container .position-container .opciones-container .burger svg {
+  margin-top: 4px;
+}
+.navbar-container .background-container .position-container .opciones-container .burger svg:hover rect {
   transition: fill 0.1s linear;
   fill: var(--hover-white-2);
 }
-.navbar-container .opciones-container .options {
+.navbar-container .background-container .position-container .opciones-container .options {
   z-index: 100;
-  position: fixed;
+  position: absolute;
   background-color: var(--black);
   border-radius: 1% 0% 0% 1%;
   right: 0rem;
@@ -420,15 +434,15 @@ a {
   width: 50%;
   max-width: 40rem;
 }
-.navbar-container .opciones-container .options .xbtn svg {
+.navbar-container .background-container .position-container .opciones-container .options .xbtn svg {
   margin-top: 4rem;
   margin-left: -50%;
 }
-.navbar-container .opciones-container .options .xbtn svg:hover polygon {
+.navbar-container .background-container .position-container .opciones-container .options .xbtn svg:hover polygon {
   transition: fill 0.1s linear;
   fill: var(--hover-white);
 }
-.navbar-container .opciones-container .options .option {
+.navbar-container .background-container .position-container .opciones-container .options .option {
   width: 100%;
   margin-top: 2rem;
   margin-right: -3rem;
@@ -438,44 +452,44 @@ a {
   justify-content: center;
   gap: 2rem;
 }
-.navbar-container .opciones-container .options .option a {
+.navbar-container .background-container .position-container .opciones-container .options .option a {
   transition: color 0.1s linear;
   color: var(--white);
   font-weight: 500;
   font-size: 2.2rem;
   font-family: var(--3font);
 }
-.navbar-container .opciones-container .options .option a:hover {
+.navbar-container .background-container .position-container .opciones-container .options .option a:hover {
   color: var(--hover-white);
 }
-.navbar-container .opciones-container .options .option a:nth-child(2) {
+.navbar-container .background-container .position-container .opciones-container .options .option a:nth-child(2) {
   animation-delay: 0.1444444444s;
 }
-.navbar-container .opciones-container .options .option a:nth-child(3) {
+.navbar-container .background-container .position-container .opciones-container .options .option a:nth-child(3) {
   animation-delay: 0.2166666667s;
 }
-.navbar-container .opciones-container .options .option a:nth-child(4) {
+.navbar-container .background-container .position-container .opciones-container .options .option a:nth-child(4) {
   animation-delay: 0.2888888889s;
 }
-.navbar-container .opciones-container .options .option a:nth-child(5) {
+.navbar-container .background-container .position-container .opciones-container .options .option a:nth-child(5) {
   animation-delay: 0.3611111111s;
 }
-.navbar-container .opciones-container .options .option a:nth-child(6) {
+.navbar-container .background-container .position-container .opciones-container .options .option a:nth-child(6) {
   animation-delay: 0.4333333333s;
 }
-.navbar-container .opciones-container .options .option a:nth-child(6) {
+.navbar-container .background-container .position-container .opciones-container .options .option a:nth-child(6) {
   color: var(--yellow);
 }
-.navbar-container .opciones-container .options .option a:nth-child(6):hover {
+.navbar-container .background-container .position-container .opciones-container .options .option a:nth-child(6):hover {
   color: var(--brown);
 }
-.navbar-container .social-container-2 {
+.navbar-container .background-container .position-container .social-container-2 {
   width: 100%;
   height: 1rem;
   margin-top: 6rem;
   margin-bottom: 0rem;
 }
-.navbar-container .social-container-2 .divition-line {
+.navbar-container .background-container .position-container .social-container-2 .divition-line {
   animation-delay: 1s;
   margin: 0 auto;
   width: 80%;
@@ -483,7 +497,7 @@ a {
   opacity: 0.3;
   height: 0.1rem;
 }
-.navbar-container .social-container-2 .social-medias {
+.navbar-container .background-container .position-container .social-container-2 .social-medias {
   width: 100%;
   margin-top: 10%;
   display: flex;
@@ -491,63 +505,63 @@ a {
   align-items: center;
   justify-content: space-evenly;
 }
-.navbar-container .social-container-2 .social-medias a {
+.navbar-container .background-container .position-container .social-container-2 .social-medias a {
   animation-delay: 1s;
 }
-.navbar-container .social-container-2 .social-medias svg {
+.navbar-container .background-container .position-container .social-container-2 .social-medias svg {
   margin: 0;
 }
-.navbar-container .social-container-2 .social-medias svg path {
+.navbar-container .background-container .position-container .social-container-2 .social-medias svg path {
   fill: var(--hover-white);
   opacity: 0.7;
 }
-.navbar-container .social-container-2 .social-medias svg:hover path {
+.navbar-container .background-container .position-container .social-container-2 .social-medias svg:hover path {
   fill: var(--hover-white);
   opacity: 0.8;
 }
 @media screen and (min-width: 576px) {
-  .navbar-container .logo {
+  .navbar-container .background-container .position-container .logo {
     width: 10rem;
   }
-  .navbar-container .opciones-container .burger svg {
+  .navbar-container .background-container .position-container .opciones-container .burger svg {
     margin-top: 1rem;
     width: 50px;
   }
-  .navbar-container .opciones-container .options .xbtn svg {
+  .navbar-container .background-container .position-container .opciones-container .options .xbtn svg {
     width: 50px;
   }
-  .navbar-container .opciones-container .options .option a {
+  .navbar-container .background-container .position-container .opciones-container .options .option a {
     margin-top: 1rem;
     font-weight: 500;
     font-size: 2.7rem;
   }
-  .navbar-container .opciones-container .social-container {
+  .navbar-container .background-container .position-container .opciones-container .social-container {
     margin-top: 10rem;
   }
-  .navbar-container .opciones-container .social-container .social-medias svg {
+  .navbar-container .background-container .position-container .opciones-container .social-container .social-medias svg {
     width: 40px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .navbar-container .logo {
+  .navbar-container .background-container .position-container .logo {
     width: 13rem;
   }
-  .navbar-container .opciones-container .burger svg {
+  .navbar-container .background-container .position-container .opciones-container .burger svg {
     margin-top: 1rem;
     width: 55px;
   }
-  .navbar-container .opciones-container .options .xbtn svg {
+  .navbar-container .background-container .position-container .opciones-container .options .xbtn svg {
     margin-top: 5.6rem;
     width: 60px;
   }
-  .navbar-container .opciones-container .options .option a {
+  .navbar-container .background-container .position-container .opciones-container .options .option a {
     font-weight: 500;
     font-size: 2.9rem;
   }
-  .navbar-container .opciones-container .social-container {
+  .navbar-container .background-container .position-container .opciones-container .social-container {
     margin-top: 10rem;
   }
-  .navbar-container .opciones-container .social-container .social-medias svg {
+  .navbar-container .background-container .position-container .opciones-container .social-container .social-medias svg {
     width: 40px;
   }
 }
@@ -624,7 +638,7 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 82vh;
+  height: 75vh;
   color: var(--white);
 }
 .container-title .title {
@@ -788,15 +802,15 @@ a {
 }
 @media screen and (min-width: 576px) {
   .nosotros-container .text-nosotros h3 {
-    margin-top: 4rem;
+    margin-top: 5rem;
     margin-bottom: 5rem;
-    font-size: 3.6rem;
+    font-size: 3.4rem;
     font-weight: 600;
     max-width: 90%;
   }
   .nosotros-container .text-nosotros p {
     font-weight: 500;
-    font-size: 2.2rem;
+    font-size: 2rem;
     max-width: 90%;
   }
 }
@@ -856,7 +870,7 @@ a {
 .horario-container .container-background .background-2 h3 {
   color: var(--yellow);
   font-weight: 600;
-  margin-bottom: 6rem;
+  margin-bottom: 3rem;
 }
 .horario-container .container-background .background-2 .horario {
   display: flex;
@@ -887,7 +901,7 @@ a {
     background-color: var(--white);
   }
   .horario-container .container-background .background-2 h3 {
-    font-size: 4rem;
+    font-size: 3.8rem;
     margin-bottom: 1rem;
   }
   .horario-container .container-background .background-2 .horario {
@@ -898,13 +912,13 @@ a {
   }
   .horario-container .container-background .background-2 .horario .row-horario p {
     margin-left: 4rem;
-    font-size: 2.3rem;
+    font-size: 2.1rem;
     font-family: var(--2font);
   }
   .horario-container .container-background .background-2 .horario .row-horario .line-horario {
     border: 1px solid var(--yellow);
     width: 1px;
-    height: 48rem;
+    height: 44rem;
     margin-top: 2.6rem;
   }
 }
@@ -913,25 +927,25 @@ a {
     background-color: var(--white);
   }
   .horario-container .container-background .background-2 h3 {
-    font-size: 4rem;
+    font-size: 3.4rem;
     margin-bottom: 1rem;
     margin-top: 3rem;
   }
   .horario-container .container-background .background-2 .horario {
-    gap: 10rem;
+    gap: 8rem;
   }
   .horario-container .container-background .background-2 .horario .row-horario {
     gap: 1rem;
   }
   .horario-container .container-background .background-2 .horario .row-horario p {
     margin-left: 5rem;
-    font-size: 2.7rem;
+    font-size: 2.2rem;
     font-family: var(--2font);
   }
   .horario-container .container-background .background-2 .horario .row-horario .line-horario {
     border: 1px solid var(--yellow);
     width: 1px;
-    height: 55rem;
+    height: 45rem;
     margin-top: 2.6rem;
   }
 }
