@@ -736,6 +736,11 @@ a {
 .inicio-container .social-container a svg path {
   fill: var(--white);
 }
+@media screen and (min-width: 1200px) {
+  .inicio-container {
+    height: 100vh;
+  }
+}
 
 .nosotros-container {
   background-color: var(--white);

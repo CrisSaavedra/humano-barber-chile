@@ -30,4 +30,9 @@
         }
     }
 
+    @include mix.media-query(l) {
+        height: 100vh;
+        
+    }
+
 }
