@@ -4,11 +4,12 @@
 // @include mix.flex-standard($flex: column-reverse, $items: center, $justify: center);
 
 
-.horario-container{
+.horario-container {
     background-color: var(--white);
     width: 100%;
     height: 100vh;
-    .container-background{
+
+    .container-background {
         margin: 0 auto;
         position: relative;
         width: 100%;
@@ -16,7 +17,7 @@
         height: 100%;
         @include mix.flex-standard($flex: row, $items: center, $justify: center);
 
-        .background-1{
+        .background-1 {
             width: 85%;
             height: 85%;
             // background-color: rgb(68, 68, 57);
@@ -27,7 +28,7 @@
             // opacity: 0.9;
         }
 
-        .background-2{
+        .background-2 {
             z-index: 10;
             background-color: var(--black);
             width: 85%;
@@ -39,36 +40,112 @@
 
             @include mix.flex-standard($flex: column, $items: center, $justify: center);
 
-            h3{
+            h3 {
                 color: var(--yellow);
                 font-weight: 600;
                 margin-bottom: 6rem;
+                
             }
 
-            .horario{
+            .horario {
 
                 @include mix.flex-standard($flex: row, $items: center, $justify: center);
                 gap: 3rem;
-                .row-horario{
+
+                .row-horario {
                     @include mix.flex-standard($flex: column, $items: center, $justify: center);
                     gap: 1rem;
-                    
-                    p{
+
+                    p {
                         font-size: 1.8rem;
+                        font-family: var(--3font);
                     }
 
-                    .line-horario{
-                       
-                       border: 1px solid var(--yellow) ;
-                       width: 1px;
-                       height: 39rem;
-                       margin-top: 3rem;
+                    .line-horario {
+
+                        border: 1px solid var(--yellow);
+                        width: 1px;
+                        height: 39rem;
+                        margin-top: 2.6rem;
                     }
                 }
 
             }
-            
+
+        }
+    }
+
+
+    @include mix.media-query(md) {
+        .container-background {
+            background-color: var(--white);
+            .background-2 {
+                h3 {
+                    font-size: 4rem;
+                    margin-bottom: 1rem;
+                }
+
+                .horario {
+                    gap: 3rem;
+
+                    .row-horario {
+                       
+                        gap: 1rem;
+
+                        p {
+                            margin-left: 4rem;
+                            font-size: 2.3rem;
+                            font-family: var(--2font);
+                        }
+
+                        .line-horario {
+
+                            border: 1px solid var(--yellow);
+                            width: 1px;
+                            height: 48rem;
+                            margin-top: 2.6rem;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    @include mix.media-query(l) {
+        .container-background {
+            background-color: var(--white);
+            .background-2 {
+                h3 {
+                    font-size: 4rem;
+                    margin-bottom: 1rem;
+                    margin-top: 3rem;
+                }
+
+                .horario {
+                    gap: 10rem;
+
+                    .row-horario {
+                       
+                        gap: 1rem;
+
+                        p {
+                            margin-left: 5rem;
+                            font-size: 2.7rem;
+                            font-family: var(--2font);
+                        }
+
+                        .line-horario {
+
+                            border: 1px solid var(--yellow);
+                            width: 1px;
+                            height: 55rem;
+                            margin-top: 2.6rem;
+                        }
+                    }
+
+                }
+            }
         }
     }
 }
-

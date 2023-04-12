@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Antonio:wght@200;300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Anuphan:wght@300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Khojki:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;500;600;700&display=swap");
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -312,8 +312,8 @@ template {
 
 :root {
   --principalFont: "Antonio", sans-serif;
-  --secondFont: "Anuphan", sans-serif;
-  --3font: "Noto Serif Khojki", serif;
+  --2font: "Kanit", sans-serif;
+  --3font: "Libre Franklin", sans-serif;
   --black: #000003;
   --yellow: #c6c621;
   --hover-yellow: #ac9d32;
@@ -400,10 +400,10 @@ a {
   justify-content: space-between;
 }
 .navbar-container .opciones-container .burger {
+  position: fixed;
   z-index: 100;
-}
-.navbar-container .opciones-container .burger svg {
-  margin-top: 4px;
+  top: 3.6rem;
+  right: 2rem;
 }
 .navbar-container .opciones-container .burger svg:hover rect {
   transition: fill 0.1s linear;
@@ -411,7 +411,7 @@ a {
 }
 .navbar-container .opciones-container .options {
   z-index: 100;
-  position: absolute;
+  position: fixed;
   background-color: var(--black);
   border-radius: 1% 0% 0% 1%;
   right: 0rem;
@@ -441,8 +441,9 @@ a {
 .navbar-container .opciones-container .options .option a {
   transition: color 0.1s linear;
   color: var(--white);
-  font-weight: 400;
+  font-weight: 500;
   font-size: 2.2rem;
+  font-family: var(--3font);
 }
 .navbar-container .opciones-container .options .option a:hover {
   color: var(--hover-white);
@@ -517,7 +518,7 @@ a {
   }
   .navbar-container .opciones-container .options .option a {
     margin-top: 1rem;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 2.7rem;
   }
   .navbar-container .opciones-container .social-container {
@@ -540,7 +541,7 @@ a {
     width: 60px;
   }
   .navbar-container .opciones-container .options .option a {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 2.9rem;
   }
   .navbar-container .opciones-container .social-container {
@@ -629,7 +630,7 @@ a {
 .container-title .title {
   text-align: center;
   position: relative;
-  height: 12rem;
+  height: 10rem;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -640,13 +641,15 @@ a {
   position: absolute;
   font-size: 4rem;
   top: 0;
-  font-weight: 700;
+  font-weight: 600;
+  font-family: var(--2font);
 }
 .container-title .title .title-2 {
+  font-family: var(--2font);
   position: absolute;
   font-size: 8rem;
-  margin-top: 3rem;
-  font-weight: 700;
+  margin-top: 2rem;
+  font-weight: 600;
 }
 .container-title .subtitle {
   color: var(--white);
@@ -655,6 +658,7 @@ a {
   font-weight: 500;
   transition: color 0.2s;
   border-bottom: 1px solid var(--brown);
+  font-family: var(--2font);
 }
 .container-title .subtitle:hover {
   opacity: 0.7;
@@ -683,13 +687,13 @@ a {
     height: 75vh;
   }
   .container-title .title {
-    height: 28rem;
+    height: 24rem;
   }
   .container-title .title .title-1 {
-    font-size: 8rem;
+    font-size: 7rem;
   }
   .container-title .title .title-2 {
-    font-size: 18rem;
+    font-size: 15rem;
     margin-top: 4rem;
   }
   .container-title .subtitle {
@@ -765,9 +769,9 @@ a {
   border-radius: 1%;
 }
 .nosotros-container .text-nosotros h3 {
-  margin-top: 4rem;
+  margin-top: 3rem;
   margin-bottom: 2rem;
-  font-size: 2.7rem;
+  font-size: 2.9rem;
   font-weight: 600;
   color: var(--yellow);
   max-width: 90%;
@@ -786,13 +790,13 @@ a {
   .nosotros-container .text-nosotros h3 {
     margin-top: 4rem;
     margin-bottom: 5rem;
-    font-size: 3.7rem;
+    font-size: 3.6rem;
     font-weight: 600;
     max-width: 90%;
   }
   .nosotros-container .text-nosotros p {
     font-weight: 500;
-    font-size: 2.3rem;
+    font-size: 2.2rem;
     max-width: 90%;
   }
 }
@@ -870,12 +874,66 @@ a {
 }
 .horario-container .container-background .background-2 .horario .row-horario p {
   font-size: 1.8rem;
+  font-family: var(--3font);
 }
 .horario-container .container-background .background-2 .horario .row-horario .line-horario {
   border: 1px solid var(--yellow);
   width: 1px;
   height: 39rem;
-  margin-top: 3rem;
+  margin-top: 2.6rem;
+}
+@media screen and (min-width: 576px) {
+  .horario-container .container-background {
+    background-color: var(--white);
+  }
+  .horario-container .container-background .background-2 h3 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+  .horario-container .container-background .background-2 .horario {
+    gap: 3rem;
+  }
+  .horario-container .container-background .background-2 .horario .row-horario {
+    gap: 1rem;
+  }
+  .horario-container .container-background .background-2 .horario .row-horario p {
+    margin-left: 4rem;
+    font-size: 2.3rem;
+    font-family: var(--2font);
+  }
+  .horario-container .container-background .background-2 .horario .row-horario .line-horario {
+    border: 1px solid var(--yellow);
+    width: 1px;
+    height: 48rem;
+    margin-top: 2.6rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .horario-container .container-background {
+    background-color: var(--white);
+  }
+  .horario-container .container-background .background-2 h3 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+  }
+  .horario-container .container-background .background-2 .horario {
+    gap: 10rem;
+  }
+  .horario-container .container-background .background-2 .horario .row-horario {
+    gap: 1rem;
+  }
+  .horario-container .container-background .background-2 .horario .row-horario p {
+    margin-left: 5rem;
+    font-size: 2.7rem;
+    font-family: var(--2font);
+  }
+  .horario-container .container-background .background-2 .horario .row-horario .line-horario {
+    border: 1px solid var(--yellow);
+    width: 1px;
+    height: 55rem;
+    margin-top: 2.6rem;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -1,10 +1,12 @@
 
-export const clickBurger = () => {
+export const clickBurger = (e) => {
+    e.preventDefault();
     let burger = document.getElementById('burger');
     burger.classList.add('close-burger');
 }
 
-export const clickClose = () => {
+export const clickClose = (e) => {
+    e.preventDefault();
     let options = document.getElementById('options');
     options.classList.add('close-options');
 }

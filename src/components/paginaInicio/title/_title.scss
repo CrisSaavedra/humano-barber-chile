@@ -9,7 +9,7 @@
     .title {
         text-align: center;
         position: relative;
-        height: 12rem;
+        height: 10rem;
         width: 100%;
         // background-color: rgba(133, 139, 139, 0.488);
         @include mix.flex-standard($flex: column, $items: center, $justify: space-between);
@@ -18,14 +18,16 @@
             position: absolute;
             font-size: 4rem;
             top: 0;
-            font-weight: 700;
+            font-weight: 600;
+            font-family: var(--2font);
         }
 
         .title-2 {
+            font-family: var(--2font);
             position: absolute;
             font-size: 8rem;
-            margin-top: 3rem;
-            font-weight: 700;
+            margin-top: 2rem;
+            font-weight: 600;
         }
 
     }
@@ -37,6 +39,7 @@
         font-weight: 500;
         transition: color 0.2s;
         border-bottom: 1px solid var(--brown);
+        font-family: var(--2font);
 
         &:hover{
             opacity: 0.7;
@@ -73,13 +76,13 @@
         height: 75vh;
         .title{
             // background-color: rgba(0, 255, 255, 0.262);
-            height: 28rem;
+            height: 24rem;
             .title-1{
-                font-size: 8rem;
+                font-size: 7rem;
             }
 
             .title-2{
-                font-size: 18rem;
+                font-size: 15rem;
                 margin-top: 4rem;
             }
         }

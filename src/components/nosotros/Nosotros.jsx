@@ -6,12 +6,12 @@ export const Nosotros = () => {
             <div className="nosotros-img">
 
                 <div className="text-nosotros">
-                    <h3>Bienvenidos a HumanoBarberChile </h3>
+                    <h3>Humano Barber Chile </h3>
                     <p>
                         En nuestro establecimiento no solo encontrarás un corte de cabello y un arreglo de barba impecable, sino que también te brindamos una experiencia única de relajación y diversión.
                     </p >
                     <p>
-                        Además, en HumanoBarberChile creemos que la risa es la mejor medicina, por lo que siempre encontrarás un ambiente alegre y divertido que te hará sentir como en casa.Estamos seguros de que te encantará venir a visitarnos.
+                        Además, en HumanoBarberChile creemos que la risa es la mejor medicina, por lo que siempre encontrarás un ambiente alegre y divertido que te hará sentir como en casa. Estamos seguros de que te encantará venir a visitarnos.
                     </p>
 
                     <p>
