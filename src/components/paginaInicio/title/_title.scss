@@ -3,7 +3,7 @@
 .container-title {
     
     @include mix.flex-standard($flex: column, $items: center, $justify: center);
-    height: 75vh;
+    height: 70vh;
     color: var(--white);
 
     .title {
