@@ -4,6 +4,9 @@ import { Nosotros } from './components/nosotros/Nosotros'
 import { Horario } from './components/horario/Horario'
 import { useEffect } from 'react'
 import { addEventeScrollToNavbar } from './animation'
+import { Footer } from './components/footer/Footer'
+
+
 
 export const HumanoBarberChile = () => {
 
@@ -19,6 +22,7 @@ export const HumanoBarberChile = () => {
             <PaginaInicio />
             <Nosotros />
             <Horario />
+            <Footer/>
         </div>
     )
 }

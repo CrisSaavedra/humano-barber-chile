@@ -1,0 +1,81 @@
+ @use'../../sass/mixins' as mix;
+
+ //@include mix.flex-standard($flex: column, $items: center, $justify: center);
+ // @include mix.media-query(md) 
+
+
+ .footer-container {
+     padding: 4rem;
+     background-color: var(--black);
+     @include mix.flex-standard($flex: column, $items: center, $justify: center);
+     gap: 3rem;
+
+     .logo-footer {
+         img {
+             margin-left: .3rem;
+         }
+
+         @include mix.flex-standard($flex: column, $items: center, $justify: center);
+
+         h3 {
+             color: var(--white);
+             font-size: 1.8rem;
+         }
+     }
+
+     .reservar-footer {
+         width: 10rem;
+         text-align: center;
+         @include mix.flex-standard($flex: column, $items: center, $justify: center);
+         height: 4rem;
+         font-size: 2.2rem;
+         font-weight: 300;
+         border-bottom: 1px solid var(--yellow);
+         border-top: 1px solid var(--yellow);
+         transition: all 0.2s;
+
+         &:hover {
+             
+            filter: drop-shadow(0px 1px 0px var(--yellow));
+
+         }
+
+
+     }
+
+     .icons-footer {
+         margin-top: .5rem;
+         @include mix.flex-standard($flex: row, $items: center, $justify: center);
+         gap: 2rem;
+
+         svg {
+             width: 2.3rem;
+
+             path {
+                 fill: var(--hover-white-2);
+                //  opacity: 0.8;
+
+             }
+
+             rect {
+                 fill: var(--black);
+             }
+
+             &:hover{
+                path {
+                    
+                    opacity: 1;
+   
+                }
+             }
+         }
+     }
+
+     .derechos{
+        color: var(--white);
+        font-size: 1.2rem;
+        span{
+            font-size: 1.5rem;
+        }
+     }
+ }

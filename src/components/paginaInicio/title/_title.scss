@@ -27,7 +27,14 @@
             position: absolute;
             font-size: 8rem;
             margin-top: 2rem;
+            margin-left: 0.4rem;
             font-weight: 600;
+            @include mix.flex-standard($flex: row, $items: top, $justify: top);//all rights
+            span{ //all rights
+                font-size: 2rem;
+                margin-top: 2rem;
+                
+            }
         }
 
     }
@@ -61,6 +68,12 @@
             .title-2{
                 font-size: 12rem;
                 margin-top: 2.5rem;
+                margin-left: 0.8rem; // all rigth
+                span{ //all rights
+                    font-size: 3rem;
+                    margin-top: 3rem;
+                    
+                }
             }
         }
 
@@ -84,6 +97,12 @@
             .title-2{
                 font-size: 15rem;
                 margin-top: 4rem;
+                margin-left: 1.2rem; // all rigth
+                span{ //all rights
+                    font-size: 3.4rem;
+                    margin-top: 3.4rem;
+                    
+                }
             }
         }
 
