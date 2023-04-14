@@ -975,7 +975,7 @@ a {
 }
 
 .footer-container {
-  padding: 4rem;
+  padding-top: 4rem;
   background-color: var(--black);
   display: flex;
   flex-direction: column;
@@ -983,20 +983,34 @@ a {
   justify-content: center;
   gap: 3rem;
 }
-.footer-container .logo-footer {
+.footer-container .container-logo-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+.footer-container .container-logo-buttons .logo-footer {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.footer-container .logo-footer img {
-  margin-left: 0.3rem;
+.footer-container .container-logo-buttons .logo-footer img {
+  margin-left: 0.5rem;
 }
-.footer-container .logo-footer h3 {
+.footer-container .container-logo-buttons .logo-footer h3 {
   color: var(--white);
-  font-size: 1.8rem;
+  font-size: 1.9rem;
 }
-.footer-container .reservar-footer {
+.footer-container .container-logo-buttons .container-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+.footer-container .container-logo-buttons .container-buttons .reservar-footer {
   width: 10rem;
   text-align: center;
   display: flex;
@@ -1010,10 +1024,10 @@ a {
   border-top: 1px solid var(--yellow);
   transition: all 0.2s;
 }
-.footer-container .reservar-footer:hover {
+.footer-container .container-logo-buttons .container-buttons .reservar-footer:hover {
   filter: drop-shadow(0px 1px 0px var(--yellow));
 }
-.footer-container .icons-footer {
+.footer-container .container-logo-buttons .container-buttons .icons-footer {
   margin-top: 0.5rem;
   display: flex;
   flex-direction: row;
@@ -1021,24 +1035,61 @@ a {
   justify-content: center;
   gap: 2rem;
 }
-.footer-container .icons-footer svg {
+.footer-container .container-logo-buttons .container-buttons .icons-footer svg {
   width: 2.3rem;
 }
-.footer-container .icons-footer svg path {
+.footer-container .container-logo-buttons .container-buttons .icons-footer svg path {
   fill: var(--hover-white-2);
 }
-.footer-container .icons-footer svg rect {
+.footer-container .container-logo-buttons .container-buttons .icons-footer svg rect {
   fill: var(--black);
 }
-.footer-container .icons-footer svg:hover path {
+.footer-container .container-logo-buttons .container-buttons .icons-footer svg:hover path {
   opacity: 1;
 }
 .footer-container .derechos {
   color: var(--white);
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 .footer-container .derechos span {
   font-size: 1.5rem;
+}
+@media screen and (min-width: 576px) {
+  .footer-container .container-logo-buttons {
+    width: 100%;
+    max-width: 100rem;
+    gap: 0rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .footer-container .container-logo-buttons .logo-footer img {
+    margin-left: 0.6rem;
+    width: 13rem;
+  }
+  .footer-container .container-logo-buttons .logo-footer h3 {
+    font-size: 2rem;
+  }
+  .footer-container .container-logo-buttons .container-buttons {
+    margin-top: 4rem;
+  }
+  .footer-container .container-logo-buttons .container-buttons .reservar-footer {
+    height: 5rem;
+    width: 12rem;
+    font-size: 2.4rem;
+  }
+  .footer-container .container-logo-buttons .container-buttons .icons-footer {
+    margin-top: 0.8rem;
+  }
+  .footer-container .container-logo-buttons .container-buttons .icons-footer svg {
+    width: 2.3rem;
+    width: 2.5rem;
+  }
+  .footer-container .derechos {
+    margin-top: 2rem;
+    font-size: 1.4rem;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

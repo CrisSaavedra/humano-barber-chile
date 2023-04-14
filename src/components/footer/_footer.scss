@@ -5,77 +5,136 @@
 
 
  .footer-container {
-     padding: 4rem;
+     padding-top: 4rem;
      background-color: var(--black);
      @include mix.flex-standard($flex: column, $items: center, $justify: center);
      gap: 3rem;
 
-     .logo-footer {
-         img {
-             margin-left: .3rem;
-         }
+     .container-logo-buttons {
 
          @include mix.flex-standard($flex: column, $items: center, $justify: center);
+         gap: 3rem;
 
-         h3 {
-             color: var(--white);
-             font-size: 1.8rem;
-         }
-     }
+         .logo-footer {
+             img {
+                 margin-left: .5rem;
+             }
 
-     .reservar-footer {
-         width: 10rem;
-         text-align: center;
-         @include mix.flex-standard($flex: column, $items: center, $justify: center);
-         height: 4rem;
-         font-size: 2.2rem;
-         font-weight: 300;
-         border-bottom: 1px solid var(--yellow);
-         border-top: 1px solid var(--yellow);
-         transition: all 0.2s;
+             @include mix.flex-standard($flex: column, $items: center, $justify: center);
 
-         &:hover {
-             
-            filter: drop-shadow(0px 1px 0px var(--yellow));
-
+             h3 {
+                 color: var(--white);
+                 font-size: 1.9rem;
+             }
          }
 
+         .container-buttons {
 
-     }
+             @include mix.flex-standard($flex: column, $items: center, $justify: center);
+             gap: 3rem;
 
-     .icons-footer {
-         margin-top: .5rem;
-         @include mix.flex-standard($flex: row, $items: center, $justify: center);
-         gap: 2rem;
+             .reservar-footer {
+                 width: 10rem;
+                 text-align: center;
+                 @include mix.flex-standard($flex: column, $items: center, $justify: center);
+                 height: 4rem;
+                 font-size: 2.2rem;
+                 font-weight: 300;
+                 border-bottom: 1px solid var(--yellow);
+                 border-top: 1px solid var(--yellow);
+                 transition: all 0.2s;
 
-         svg {
-             width: 2.3rem;
+                 &:hover {
 
-             path {
-                 fill: var(--hover-white-2);
-                //  opacity: 0.8;
+                     filter: drop-shadow(0px 1px 0px var(--yellow));
+
+                 }
+
 
              }
 
-             rect {
-                 fill: var(--black);
-             }
+             .icons-footer {
+                 margin-top: .5rem;
+                 @include mix.flex-standard($flex: row, $items: center, $justify: center);
+                 gap: 2rem;
 
-             &:hover{
-                path {
-                    
-                    opacity: 1;
-   
-                }
+                 svg {
+                     width: 2.3rem;
+
+                     path {
+                         fill: var(--hover-white-2);
+                         //  opacity: 0.8;
+
+                     }
+
+                     rect {
+                         fill: var(--black);
+                     }
+
+                     &:hover {
+                         path {
+
+                             opacity: 1;
+
+                         }
+                     }
+                 }
              }
          }
      }
 
-     .derechos{
-        color: var(--white);
-        font-size: 1.2rem;
-        span{
-            font-size: 1.5rem;
+     .derechos {
+         color: var(--white);
+         font-size: 1.3rem;
+
+         span {
+             font-size: 1.5rem;
+         }
+     }
+
+     @include mix.media-query(md) {
+         .container-logo-buttons {
+             width: 100%;
+             max-width: 100rem;
+             gap: 0rem;
+             @include mix.flex-standard($flex: row, $items: center, $justify: space-around);
+
+             .logo-footer {
+                 img {
+                     margin-left: .6rem;
+                     width: 13rem;
+                 }
+
+                 h3 {
+
+                     font-size: 2rem;
+                 }
+             }
+
+             .container-buttons {
+                 margin-top: 4rem;
+
+                 .reservar-footer {
+                    height: 5rem;
+                     width: 12rem;
+                     font-size: 2.4rem;
+                 }
+
+                 .icons-footer {
+                     margin-top: .8rem;
+
+                     svg {
+                         width: 2.3rem;
+                         width: 2.5rem;
+                     }
+                 }
+             }
+
+         }
+
+         .derechos {
+            margin-top: 2rem;
+           font-size: 1.4rem;
         }
      }
  }
