@@ -5,6 +5,7 @@ import { Horario } from './components/horario/Horario'
 import { useEffect } from 'react'
 import { addEventeScrollToNavbar } from './animation'
 import { Footer } from './components/footer/Footer'
+import { Mapa } from './components/mapa/Mapa'
 
 
 
@@ -21,6 +22,7 @@ export const HumanoBarberChile = () => {
             <div className="background-img"></div>
             <PaginaInicio />
             <Nosotros />
+            <Mapa/>
             <Horario />
             <Footer/>
         </div>

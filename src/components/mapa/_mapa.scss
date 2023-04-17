@@ -1,0 +1,59 @@
+@use'../../sass/mixins' as mix;
+
+.mapa-container {
+    height: 100vh;
+    background-color: var(--black);
+
+    @include mix.flex-standard($flex: column, $items: center, $justify: center);
+
+
+    .title-mapa {
+        color: var(--yellow);
+
+
+        h3 {
+            // font-family: var(--3font);
+            font-size: 3.3rem;
+            font-weight: 800;
+        }
+
+    }
+
+    svg {
+        margin-top: 2rem;
+        width: 4.5rem;
+
+        path {
+            fill: rgba(165, 164, 164, 0.605);
+            
+        }
+
+    }
+
+    .text {
+        font-family: var(--3font);
+        color: var(--white);
+        font-size: 1.6rem;
+        margin-bottom: 6rem;
+
+        a {
+            color: var(--yellow);
+            font-weight: 600;
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+
+    .mapa {
+
+        margin-top: .5rem;
+        border-radius: 2rem;
+
+        iframe {
+            margin: 0 auto;
+            border: 0;
+            width: 100%;
+        }
+    }
+}
