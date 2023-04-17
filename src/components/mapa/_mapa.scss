@@ -7,38 +7,39 @@
     @include mix.flex-standard($flex: column, $items: center, $justify: center);
 
 
-    .title-mapa {
-        color: var(--yellow);
-
-
-        h3 {
-            // font-family: var(--3font);
-            font-size: 3.3rem;
-            font-weight: 800;
-        }
-
-    }
-
-    svg {
-        margin-top: 2rem;
-        width: 4.5rem;
-
-        path {
-            fill: rgba(165, 164, 164, 0.605);
-            
-        }
-
-    }
-
     .text {
-        font-family: var(--3font);
-        color: var(--white);
-        font-size: 1.6rem;
-        margin-bottom: 6rem;
+        @include mix.flex-standard($flex: column, $items: center, $justify: center);
+
+        .title-mapa {
+            color: var(--yellow);
+
+
+            h3 {
+                // font-family: var(--3font);
+                font-size: 3.3rem;
+                font-weight: 800;
+            }
+
+        }
+
+        svg {
+            margin-top: 2rem;
+            width: 4.5rem;
+
+            path {
+                fill: rgba(165, 164, 164, 0.605);
+
+            }
+
+        }
 
         a {
+            font-family: var(--3font);
+            font-size: 1.6rem;
+            margin-bottom: 6rem;
             color: var(--yellow);
             font-weight: 600;
+
             &:hover {
                 opacity: 0.8;
             }
@@ -46,7 +47,7 @@
     }
 
     .mapa {
-
+        width: 80%;
         margin-top: .5rem;
         border-radius: 2rem;
 
@@ -54,6 +55,76 @@
             margin: 0 auto;
             border: 0;
             width: 100%;
+        }
+    }
+
+
+
+    @include mix.media-query(md) {
+        .text {
+
+
+            .title-mapa {
+                h3 {
+                    font-size: 4rem;
+                }
+            }
+
+            svg {
+                margin-top: 2rem;
+                width: 5rem;
+
+            }
+
+            a {
+                font-size: 1.95rem;
+
+            }
+        }
+
+        .mapa {
+
+            margin-top: .5rem;
+            border-radius: 2rem;
+
+            iframe {
+                width: 100%;
+                height: 40rem;
+            }
+        }
+    }
+
+    @include mix.media-query(l) {
+        max-width: 250rem;
+        margin: 0 auto;
+        @include mix.flex-standard($flex: row, $items: center, $justify:center);
+        gap: 10rem;
+        .text {
+            width: 30%;
+            .title-mapa {
+                h3 {
+                    font-size: 5rem;
+                }
+            }
+
+            svg {
+               
+                width: 5.5rem;
+
+            }
+
+            a {
+                font-size: 2.4rem;
+
+            }
+        }
+
+        .mapa {
+            width: 40%;
+            iframe {
+                
+                height: 60rem;
+            }
         }
     }
 }

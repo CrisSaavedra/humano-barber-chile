@@ -542,29 +542,6 @@ a {
     width: 40px;
   }
 }
-@media screen and (min-width: 1200px) {
-  .navbar-container .background-container .position-container .logo {
-    width: 13rem;
-  }
-  .navbar-container .background-container .position-container .opciones-container .burger svg {
-    margin-top: 1rem;
-    width: 55px;
-  }
-  .navbar-container .background-container .position-container .opciones-container .options .xbtn svg {
-    margin-top: 5.6rem;
-    width: 60px;
-  }
-  .navbar-container .background-container .position-container .opciones-container .options .option a {
-    font-weight: 500;
-    font-size: 2.9rem;
-  }
-  .navbar-container .background-container .position-container .opciones-container .social-container {
-    margin-top: 10rem;
-  }
-  .navbar-container .background-container .position-container .opciones-container .social-container .social-medias svg {
-    width: 40px;
-  }
-}
 
 .d-none {
   display: none;
@@ -1100,27 +1077,30 @@ a {
   align-items: center;
   justify-content: center;
 }
-.mapa-container .title-mapa {
+.mapa-container .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.mapa-container .text .title-mapa {
   color: var(--yellow);
 }
-.mapa-container .title-mapa h3 {
+.mapa-container .text .title-mapa h3 {
   font-size: 3.3rem;
   font-weight: 800;
 }
-.mapa-container svg {
+.mapa-container .text svg {
   margin-top: 2rem;
   width: 4.5rem;
 }
-.mapa-container svg path {
+.mapa-container .text svg path {
   fill: rgba(165, 164, 164, 0.605);
 }
-.mapa-container .text {
+.mapa-container .text a {
   font-family: var(--3font);
-  color: var(--white);
   font-size: 1.6rem;
   margin-bottom: 6rem;
-}
-.mapa-container .text a {
   color: var(--yellow);
   font-weight: 600;
 }
@@ -1128,6 +1108,7 @@ a {
   opacity: 0.8;
 }
 .mapa-container .mapa {
+  width: 80%;
   margin-top: 0.5rem;
   border-radius: 2rem;
 }
@@ -1135,6 +1116,55 @@ a {
   margin: 0 auto;
   border: 0;
   width: 100%;
+}
+@media screen and (min-width: 576px) {
+  .mapa-container .text .title-mapa h3 {
+    font-size: 4rem;
+  }
+  .mapa-container .text svg {
+    margin-top: 2rem;
+    width: 5rem;
+  }
+  .mapa-container .text a {
+    font-size: 1.95rem;
+  }
+  .mapa-container .mapa {
+    margin-top: 0.5rem;
+    border-radius: 2rem;
+  }
+  .mapa-container .mapa iframe {
+    width: 100%;
+    height: 40rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mapa-container {
+    max-width: 250rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+  }
+  .mapa-container .text {
+    width: 30%;
+  }
+  .mapa-container .text .title-mapa h3 {
+    font-size: 5rem;
+  }
+  .mapa-container .text svg {
+    width: 5.5rem;
+  }
+  .mapa-container .text a {
+    font-size: 2.4rem;
+  }
+  .mapa-container .mapa {
+    width: 40%;
+  }
+  .mapa-container .mapa iframe {
+    height: 60rem;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

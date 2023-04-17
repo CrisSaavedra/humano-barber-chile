@@ -211,56 +211,56 @@
         }
     }
 
-    @include mix.media-query(l) {
-        .background-container {
-            .position-container {
+    // @include mix.media-query(l) {
+    //     .background-container {
+    //         .position-container {
 
-                .logo {
-                    width: 13rem;
-                }
+    //             .logo {
+    //                 width: 13rem;
+    //             }
 
-                .opciones-container {
-                    .burger {
-                        svg {
-                            margin-top: 1rem;
-                            width: 55px;
-                        }
-                    }
+    //             .opciones-container {
+    //                 .burger {
+    //                     svg {
+    //                         margin-top: 1rem;
+    //                         width: 55px;
+    //                     }
+    //                 }
 
-                    .options {
+    //                 .options {
 
-                        .xbtn svg {
-                            margin-top: 5.6rem;
-                            width: 60px;
-                        }
+    //                     .xbtn svg {
+    //                         margin-top: 5.6rem;
+    //                         width: 60px;
+    //                     }
 
-                        .option {
-                            a {
+    //                     .option {
+    //                         a {
 
-                                font-weight: 500;
-                                font-size: 2.9rem;
-                            }
-                        }
-                    }
-
-
-                    .social-container {
-                        margin-top: 10rem;
+    //                             font-weight: 500;
+    //                             font-size: 2.9rem;
+    //                         }
+    //                     }
+    //                 }
 
 
-                        .social-medias {
-
-                            svg {
-                                width: 40px;
-                            }
-                        }
+    //                 .social-container {
+    //                     margin-top: 10rem;
 
 
-                    }
-                }
-            }
-        }
-    }
+    //                     .social-medias {
+
+    //                         svg {
+    //                             width: 40px;
+    //                         }
+    //                     }
+
+
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
 }
 
 .d-none {
