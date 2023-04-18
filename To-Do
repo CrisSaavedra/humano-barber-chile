@@ -1,15 +1,9 @@
 /*
 
 - When i click outside of menu, then change  all values to initial state;
-- move the nav navbar when i scrolling -20;
-- add link to 'a' TAG's 
-
+- move the nav navbar when i scrolling -20, with all buttons
 - add animation for 'nosotros' in
 - animation by scroll
-
-
-
-
-
+- change jpg for webp
 
 */
