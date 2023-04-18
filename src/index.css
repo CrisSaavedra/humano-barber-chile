@@ -1168,8 +1168,8 @@ a {
 }
 
 .galeria-container {
-  height: 100rem;
   width: 100%;
+  padding-bottom: 0.2rem;
   background-color: var(--white);
   display: flex;
   flex-direction: row;
@@ -1182,13 +1182,13 @@ a {
   align-items: center;
   justify-content: center;
   width: 90%;
-  height: 100%;
+  height: 120rem;
   max-width: 130rem;
   flex-wrap: wrap;
 }
 .galeria-container .row .column {
   width: 50%;
-  height: 100%;
+  height: 60rem;
   max-height: fit-content;
   padding: 0.1rem;
 }
@@ -1250,10 +1250,11 @@ a {
 }
 @media screen and (min-width: 576px) {
   .galeria-container .row {
-    width: 98%;
+    width: 100%;
+    height: 68rem;
   }
   .galeria-container .row .column {
-    width: 24%;
+    width: 25%;
   }
   .galeria-container .row .column a .img {
     background-position: center;
@@ -1267,7 +1268,7 @@ a {
     max-width: 140rem;
   }
   .galeria-container .row .column {
-    width: 24%;
+    width: 25%;
   }
   .galeria-container .row .column a .img {
     background-position: center;

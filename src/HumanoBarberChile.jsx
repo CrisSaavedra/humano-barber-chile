@@ -23,10 +23,11 @@ export const HumanoBarberChile = () => {
             <div className="background-img"></div>
             <PaginaInicio />
             <Nosotros />
-            <Mapa/>
+            <Galeria />
+            <Mapa />
             <Horario />
-            <Footer/>
-            <Galeria/>
+            <Footer />
+
         </div>
     )
 }
