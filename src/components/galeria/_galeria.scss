@@ -6,9 +6,12 @@
 // galeria funcional 1
 
 
+
+
 .galeria-container {
     width: 100%;
-    padding-bottom: 0.2rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
     background-color: var(--white);
     @include mix.flex-standard($flex: row, $items: center, $justify: center);
 
@@ -36,6 +39,24 @@
                     height: 10rem;
                     margin-top: .1rem;
                     margin-bottom: .1rem;
+                    // overflow: hidden;
+                    transition: all .4s;
+
+
+                   
+                    &:hover {
+                        filter: blur(.7px) brightness(60%);
+                        // &::before{
+                        //     filter: blur(.7px) brightness(60%);
+                        //     content: 'lupa2';
+                          
+                        // }
+
+                        // &::after{
+                        //     content: 'lupa2';
+                        //     color:var(--white);
+                        // }
+                    }   
                 }
             }
 

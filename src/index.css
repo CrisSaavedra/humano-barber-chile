@@ -1169,7 +1169,8 @@ a {
 
 .galeria-container {
   width: 100%;
-  padding-bottom: 0.2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   background-color: var(--white);
   display: flex;
   flex-direction: row;
@@ -1199,6 +1200,10 @@ a {
   height: 10rem;
   margin-top: 0.1rem;
   margin-bottom: 0.1rem;
+  transition: all 0.4s;
+}
+.galeria-container .row .column a .img:hover {
+  filter: blur(0.7px) brightness(60%);
 }
 .galeria-container .row .column:nth-child(1) a:nth-child(1) .img {
   background-image: url("src/assets/galeria/galeria.jpg");
