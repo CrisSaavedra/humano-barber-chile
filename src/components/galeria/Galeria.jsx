@@ -11,27 +11,30 @@ import gal5 from '../../assets/galeria/galeria5.jpg';
 export const Galeria = () => {
 
     return (
+
+
         <div className='galeria-container'>
+
             <div className='row'>
                 <div className="column">
                     <a href={gal1}><div className='img'></div></a>
                     <a href={gal1}> <div className='img'></div></a>
-                    <a href={gal2}> <div className='img'></div></a>
-                </div>
-                <div className="column">
-                    <a href={gal2}> <div className='img'></div></a>
-                    <a href={gal3}> <div className='img'></div></a>
-                    <a href={gal5}> <div className='img'></div></a>
-                </div>
-                <div className="column">
-                    <a href={gal4}> <div className='img'></div></a>
-                    <a href={gal5}> <div className='img'></div></a>
                     <a href={gal1}> <div className='img'></div></a>
                 </div>
                 <div className="column">
-                    <a href={gal2}> <div className='img'></div></a>
-                    <a href={gal3}> <div className='img'></div></a>
-                    <a href={gal5}> <div className='img'></div></a>
+                    <a href={gal1}> <div className='img'></div></a>
+                    <a href={gal1}> <div className='img'></div></a>
+                    <a href={gal1}> <div className='img'></div></a>
+                </div>
+                <div className="column">
+                    <a href={gal1}> <div className='img'></div></a>
+                    <a href={gal1}> <div className='img'></div></a>
+                    <a href={gal1}> <div className='img'></div></a>
+                </div>
+                <div className="column">
+                    <a href={gal1}> <div className='img'></div></a>
+                    <a href={gal1}> <div className='img'></div></a>
+                    <a href={gal1}> <div className='img'></div></a>
                 </div>
             </div>
         </div>

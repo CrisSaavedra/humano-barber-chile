@@ -1,0 +1,107 @@
+@use'../../sass/mixins' as mix;
+//@include mix.flex-standard($flex: column, $items: center, $justify: center);
+// @include mix.media-query(md) 
+
+.swiper-slide-prev{
+    border-radius: 100rem;
+}
+
+.galerias-container {
+    margin: 10rem auto;
+    @include mix.flex-standard($flex: column, $items: center, $justify: center);
+
+    .title-galerias {
+      
+        .heading {
+            margin: 4rem auto;
+            border-bottom: 2px solid var(--yellow);
+        }
+    }
+
+
+    .swiper_container {
+       
+        @include mix.flex-standard($flex: column, $items: center, $justify: center);
+        width: 90%;
+        max-width: 49rem;
+
+        .img {
+            max-width: max-content;
+            background-color: rgba(0, 255, 255, 0);
+            margin: 0 auto;
+            @include mix.flex-standard($flex: column, $items: center, $justify: center);
+
+            img {
+                border-radius: 1rem;
+                float: none;
+                width: 25rem;
+                height: 30rem;
+                object-fit: cover;
+            }
+        }
+
+    }
+
+    .slider-controler {
+        // position: relative;
+
+        width: 20rem;
+        margin-top: 6rem;
+        background-color: rgb(245, 245, 245);
+
+        .slider-arrow {
+            ion-icon {
+                font-size: 2.5rem;
+                color: #222224;
+
+            }
+
+        }
+
+        .swiper-button-prev {
+            width: 2rem;
+            height: auto;
+            transform: translateY(18.2rem)translateX(4rem);
+
+            &::after {
+                content: '';
+            }
+
+        }
+
+        .swiper-button-next {
+            width: 2rem;
+            height: auto;
+            transform: translateY(18.2rem) translateX(-4rem);
+
+            &::after {
+                content: '';
+            }
+
+        }
+
+        .swiper-pagination {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 2.5rem;
+            width: 12rem;
+            left: 21%;
+
+            .swiper-pagination-bullet {
+                width: 1rem;
+                height: 1rem;
+                background-color: var(--black);
+            }
+        }
+
+
+    }
+
+}
+
+
+ion-icon {
+    color: rgb(133, 186, 18);
+}

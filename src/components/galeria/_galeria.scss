@@ -7,12 +7,11 @@
 
 
 
-
 .galeria-container {
     width: 100%;
     padding-top: .5rem;
     padding-bottom: .5rem;
-    background-color: var(--white);
+
     @include mix.flex-standard($flex: row, $items: center, $justify: center);
 
     .row {
@@ -40,23 +39,23 @@
                     margin-top: .1rem;
                     margin-bottom: .1rem;
                     // overflow: hidden;
-                    transition: all .4s;
+                    transition: filter .4s;
 
 
-                   
+
                     &:hover {
                         filter: blur(.7px) brightness(60%);
                         // &::before{
                         //     filter: blur(.7px) brightness(60%);
                         //     content: 'lupa2';
-                          
+
                         // }
 
                         // &::after{
                         //     content: 'lupa2';
                         //     color:var(--white);
                         // }
-                    }   
+                    }
                 }
             }
 
@@ -174,7 +173,7 @@
         }
 
         @include mix.media-query(md) {
-            width: 100%;
+            width: 98%;
             height: 68rem;
 
             .column {
