@@ -2,16 +2,12 @@
 //@include mix.flex-standard($flex: column, $items: center, $justify: center);
 // @include mix.media-query(md) 
 
-.swiper-slide-prev{
-    border-radius: 100rem;
-}
-
 .galerias-container {
     margin: 10rem auto;
     @include mix.flex-standard($flex: column, $items: center, $justify: center);
 
     .title-galerias {
-      
+
         .heading {
             margin: 4rem auto;
             border-bottom: 2px solid var(--yellow);
@@ -20,7 +16,7 @@
 
 
     .swiper_container {
-       
+
         @include mix.flex-standard($flex: column, $items: center, $justify: center);
         width: 90%;
         max-width: 49rem;
@@ -44,25 +40,27 @@
 
     .slider-controler {
         // position: relative;
-
+       
         width: 20rem;
-        margin-top: 6rem;
+        margin-top: 4rem;
         background-color: rgb(245, 245, 245);
 
         .slider-arrow {
             ion-icon {
-                font-size: 2.5rem;
-                color: #222224;
+                font-size: 2rem;
+                color: var(--hover-white-2);
+                opacity: 0.6;
 
             }
 
         }
 
         .swiper-button-prev {
-            width: 2rem;
-            height: auto;
-            transform: translateY(18.2rem)translateX(4rem);
+            // left: 10%; 
 
+            height: auto;
+            transform: translateY(1.2rem) translateX(-1rem);
+            position: relative;
             &::after {
                 content: '';
             }
@@ -70,9 +68,11 @@
         }
 
         .swiper-button-next {
-            width: 2rem;
+            // width: 2rem;
+            // right: 10%;
+            position: relative;
             height: auto;
-            transform: translateY(18.2rem) translateX(-4rem);
+            transform: translateY(1.4rem) translateX(17.6rem);
 
             &::after {
                 content: '';
@@ -83,11 +83,11 @@
         .swiper-pagination {
             position: relative;
             display: flex;
-            justify-content: center;
+            justify-content: space-evenly;
             align-items: center;
             height: 2.5rem;
-            width: 12rem;
-            left: 21%;
+            width: 10rem;
+            left: 25%;
 
             .swiper-pagination-bullet {
                 width: 1rem;
@@ -99,9 +99,99 @@
 
     }
 
-}
+
+    @include mix.media-query(md) {
 
 
-ion-icon {
-    color: rgb(133, 186, 18);
+        .title-galerias {
+
+            .heading {
+               
+                font-weight: 300;
+                font-size: 4rem;
+
+            }
+        }
+
+        .swiper_container {
+            width: 90%;
+            max-width: 59rem;
+            
+            .img {
+
+                img {
+                    width: 30rem;
+                    height: 35rem;
+                }
+            }
+
+        }
+
+        .slider-controler {
+         
+            .slider-arrow {
+                width: auto;
+
+                ion-icon {
+                    font-size: 4rem;
+                }
+            }
+
+            .swiper-button-prev {
+                transform: translateY(4.2rem)translateX(-11rem);
+            }
+
+            .swiper-button-next {
+                transform: translateY(2.4rem) translateX(10.9rem);
+            }
+
+            .swiper-pagination {
+                .swiper-pagination-bullet {
+                    width: 1.2rem;
+                    height: 1.2rem;
+                }
+            }
+
+
+        }
+    }
+
+
+    @include mix.media-query(l) {
+
+
+        .title-galerias {
+
+            .heading {
+                font-weight: 300;
+                font-size: 4rem;
+            }
+        }
+
+        .swiper_container {
+            width: 90%;
+            max-width: 75rem;
+
+            .img {
+
+                img {
+                    width: 40rem;
+                    height: 45rem;
+                }
+            }
+        }
+
+        .slider-controler {
+      
+            .swiper-button-prev {
+                transform: translateY(4.2rem)translateX(-12rem);
+            }
+
+            .swiper-button-next {
+                transform: translateY(2.39rem) translateX(11.2rem);
+            }
+        }
+    }
+
+
 }

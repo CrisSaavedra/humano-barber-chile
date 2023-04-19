@@ -15,7 +15,10 @@ import img_5 from "../../assets/galeria/galeria5.jpg";
 
 export const Galerias = () => {
     return (
+
         <div className='galerias-container'>
+
+
             <div className='title-galerias'>
                 <h2 className="heading">Algo de nosotros</h2>
             </div>
@@ -66,6 +69,7 @@ export const Galerias = () => {
                     <div className="swiper-button-next slider-arrow">
                         <ion-icon name="arrow-forward-outline"></ion-icon>
                     </div>
+                    
                     <div className="swiper-pagination"></div>
                 </div>
 
