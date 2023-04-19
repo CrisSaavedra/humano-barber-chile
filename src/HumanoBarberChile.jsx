@@ -10,7 +10,6 @@ import { Galeria } from './components/galeria/Galeria'
 import { Galerias } from './components/galeria2/Galerias';
 
 
-
 export const HumanoBarberChile = () => {
 
 
