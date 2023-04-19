@@ -7,7 +7,7 @@ import { addEventeScrollToNavbar } from './animation'
 import { Footer } from './components/footer/Footer'
 import { Mapa } from './components/mapa/Mapa'
 import { Galeria } from './components/galeria/Galeria'
-import { Galerias } from './components/galeria2/Galerias.jsx';
+import { Galerias } from './components/galeria2/Galerias';
 
 
 
