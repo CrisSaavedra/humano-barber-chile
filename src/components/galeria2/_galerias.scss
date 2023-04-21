@@ -3,11 +3,12 @@
 // @include mix.media-query(md) 
 
 .galerias-container {
-    margin: 10rem auto;
+    padding: 10rem auto;
+    background-color: var(--white);
     @include mix.flex-standard($flex: column, $items: center, $justify: center);
 
     .title-galerias {
-
+        margin-top: 10rem;
         .heading {
             margin: 4rem auto;
             border-bottom: 2px solid var(--yellow);
@@ -43,7 +44,8 @@
        
         width: 20rem;
         margin-top: 4rem;
-        background-color: rgb(245, 245, 245);
+        margin-bottom: 10rem;
+        background-color: var(--white);
 
         .slider-arrow {
             ion-icon {

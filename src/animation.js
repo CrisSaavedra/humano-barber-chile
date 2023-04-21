@@ -4,12 +4,12 @@ export const addEventeScrollToNavbar = () => {
 
     window.addEventListener("scroll", (e) => {
         let scroll = window.scrollY;
-        if (scroll > 10) {
+        if (scroll > 80) {
             navbar.style.position = 'fixed';
             navbar.style.backgroundColor = 'var(--black)';
 
         }
-        if (scroll < 10) {
+        if (scroll < 80) {
             navbar.style.position = 'relative';
             navbar.style.backgroundColor = 'transparent';
 

@@ -9,13 +9,6 @@ import { goTo } from './helpers';
 export const NavBar = () => {
 
 
-    const clickOut = () => { //when i click outside
-        let element = document.getElementById('click-out');
-        element.addEventListener('click', (e) => {
-            console.log(e);
-        })
-    }
-
     useEffect(() => {
 
         animationsBurger();

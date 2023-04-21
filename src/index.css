@@ -898,9 +898,6 @@ a {
   margin-top: 2.6rem;
 }
 @media screen and (min-width: 576px) {
-  .horario-container .container-background {
-    background-color: var(--white);
-  }
   .horario-container .container-background .background-2 h3 {
     font-size: 3.8rem;
     margin-bottom: 1rem;
@@ -924,9 +921,6 @@ a {
   }
 }
 @media screen and (min-width: 1200px) {
-  .horario-container .container-background {
-    background-color: var(--white);
-  }
   .horario-container .container-background .background-2 h3 {
     font-size: 3.4rem;
     margin-bottom: 1rem;
@@ -1282,11 +1276,15 @@ a {
 }
 
 .galerias-container {
-  margin: 10rem auto;
+  padding: 10rem auto;
+  background-color: var(--white);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.galerias-container .title-galerias {
+  margin-top: 10rem;
 }
 .galerias-container .title-galerias .heading {
   margin: 4rem auto;
@@ -1319,7 +1317,8 @@ a {
 .galerias-container .slider-controler {
   width: 20rem;
   margin-top: 4rem;
-  background-color: rgb(245, 245, 245);
+  margin-bottom: 10rem;
+  background-color: var(--white);
 }
 .galerias-container .slider-controler .slider-arrow ion-icon {
   font-size: 2rem;

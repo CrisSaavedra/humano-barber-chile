@@ -78,7 +78,7 @@
 
     @include mix.media-query(md) {
         .container-background {
-            background-color: var(--white);
+           
             .background-2 {
                 h3 {
                     font-size: 3.8rem;
@@ -114,7 +114,7 @@
 
     @include mix.media-query(l) {
         .container-background {
-            background-color: var(--white);
+          
             .background-2 {
                 h3 {
                     font-size: 3.4rem;
