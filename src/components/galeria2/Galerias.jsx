@@ -60,6 +60,21 @@ export const Galerias = () => {
                 <SwiperSlide className='img'>
                     <img src={img_5} alt="img_5" />
                 </SwiperSlide>
+                <SwiperSlide className='img'>
+                    <img src={img_1} alt="img_1" />
+                </SwiperSlide>
+                <SwiperSlide className='img'>
+                    <img src={img_2} alt="img_2" />
+                </SwiperSlide >
+                <SwiperSlide className='img'>
+                    <img src={img_3} alt="img_3" />
+                </SwiperSlide>
+                <SwiperSlide className='img'>
+                    <img src={img_4} alt="img_4" />
+                </SwiperSlide>
+                <SwiperSlide className='img'>
+                    <img src={img_5} alt="img_5" />
+                </SwiperSlide>
 
                 <div className="slider-controler">
                     <div className="swiper-button-prev slider-arrow">
@@ -69,7 +84,7 @@ export const Galerias = () => {
                     <div className="swiper-button-next slider-arrow">
                         <ion-icon name="arrow-forward-outline"></ion-icon>
                     </div>
-                    
+
                     <div className="swiper-pagination"></div>
                 </div>
 

@@ -1328,7 +1328,7 @@ a {
 }
 .galerias-container .slider-controler .swiper-button-prev {
   height: auto;
-  transform: translateY(1.2rem) translateX(-1rem);
+  transform: translateY(1.2rem) translateX(-5rem);
   position: relative;
 }
 .galerias-container .slider-controler .swiper-button-prev::after {
@@ -1337,7 +1337,7 @@ a {
 .galerias-container .slider-controler .swiper-button-next {
   position: relative;
   height: auto;
-  transform: translateY(1.4rem) translateX(17.6rem);
+  transform: translateY(1.5rem) translateX(22.3rem);
 }
 .galerias-container .slider-controler .swiper-button-next::after {
   content: "";
@@ -1348,12 +1348,12 @@ a {
   justify-content: space-evenly;
   align-items: center;
   height: 2.5rem;
-  width: 10rem;
-  left: 25%;
+  width: 20rem;
+  left: 1%;
 }
 .galerias-container .slider-controler .swiper-pagination .swiper-pagination-bullet {
-  width: 1rem;
-  height: 1rem;
+  width: 0.8rem;
+  height: 0.8rem;
   background-color: var(--black);
 }
 @media screen and (min-width: 576px) {
@@ -1376,10 +1376,10 @@ a {
     font-size: 4rem;
   }
   .galerias-container .slider-controler .swiper-button-prev {
-    transform: translateY(4.2rem) translateX(-11rem);
+    transform: translateY(4.2rem) translateX(-15rem);
   }
   .galerias-container .slider-controler .swiper-button-next {
-    transform: translateY(2.4rem) translateX(10.9rem);
+    transform: translateY(2.4rem) translateX(14.9rem);
   }
   .galerias-container .slider-controler .swiper-pagination .swiper-pagination-bullet {
     width: 1.2rem;
@@ -1393,17 +1393,25 @@ a {
   }
   .galerias-container .swiper_container {
     width: 90%;
-    max-width: 75rem;
+    max-width: 120rem;
   }
   .galerias-container .swiper_container .img img {
     width: 40rem;
     height: 45rem;
   }
   .galerias-container .slider-controler .swiper-button-prev {
-    transform: translateY(4.2rem) translateX(-12rem);
+    transform: translateY(4.2rem) translateX(-16rem);
   }
   .galerias-container .slider-controler .swiper-button-next {
-    transform: translateY(2.39rem) translateX(11.2rem);
+    transform: translateY(2.39rem) translateX(17.2rem);
+  }
+  .galerias-container .slider-controler .swiper-pagination {
+    width: 20rem;
+    left: 4%;
+  }
+  .galerias-container .slider-controler .swiper-pagination .swiper-pagination-bullet {
+    width: 1.2rem;
+    height: 1.2rem;
   }
 }
 
