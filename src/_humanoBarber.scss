@@ -14,3 +14,35 @@
     }
 
 }
+
+
+.initial-state{
+    animation: initialState .1s linear;
+}
+
+@keyframes initialState {
+    0%{
+        transform: translateY(0%);
+    }
+    100%{
+        transform: translateY(-100%);
+       
+    }
+}
+
+
+.on-fixed{
+    animation: onFixed .25s linear;
+}
+
+@keyframes onFixed {
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+
+
