@@ -1385,13 +1385,16 @@ a {
 .productos-container .productos .producto:nth-child(4) {
   flex-direction: row-reverse;
 }
+.productos-container .productos .producto:nth-child(6) {
+  flex-direction: row-reverse;
+}
 .productos-container .productos .producto:hover {
   filter: brightness(1.2);
 }
 @media screen and (min-width: 576px) {
   .productos-container {
-    min-height: 90vh;
-    height: 104rem;
+    height: 100vh;
+    min-height: 145rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1436,8 +1439,8 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .productos-container {
-    min-height: 90vh;
-    height: 82rem;
+    height: 100vh;
+    min-height: 105rem;
     display: flex;
     flex-direction: column;
     align-items: center;

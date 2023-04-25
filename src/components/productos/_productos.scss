@@ -71,6 +71,11 @@
                 flex-direction: row-reverse;
             }
 
+            &:nth-child(6) {
+
+                flex-direction: row-reverse;
+            }
+
             &:hover {
                 filter: brightness(1.2);
             }
@@ -82,8 +87,8 @@
 
 
     @include mix.media-query(md) {
-        min-height: 90vh;
-        height: 104rem;
+        height: 100vh;
+        min-height: 145rem;
         @include mix.flex-standard($flex: column, $items: center, $justify: start);
         width: 100%;
         color: var(--white);
@@ -134,8 +139,8 @@
 
 
     @include mix.media-query(l) {
-        min-height: 90vh;
-        height: 82rem;
+        height: 100vh;
+        min-height: 105rem;
         @include mix.flex-standard($flex: column, $items: center, $justify: start);
         width: 100%;
         color: var(--white);
