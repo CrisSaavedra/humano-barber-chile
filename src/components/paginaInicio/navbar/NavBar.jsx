@@ -40,8 +40,8 @@ export const NavBar = () => {
                             <div id='option' className='option'>
                                 <a href="#" onClick={e => goTo(e, 'topNav')} className='d-none'>Inicio</a>
                                 <a href="#" onClick={e => goTo(e, 'nosotros')} className='d-none'>Nosotros</a>
-                                <a href="#" onClick={e => goTo(e, 'topNav')} className='d-none'>Productos</a>
-                                <a href="#" onClick={e => goTo(e, 'topNav')} className='d-none'>Direccion</a>
+                                <a href="#" onClick={e => goTo(e, 'productos')} className='d-none'>Productos</a>
+                                <a href="#" onClick={e => goTo(e, 'mapa')} className='d-none'>Direccion</a>
                                 <a href="#" onClick={e => goTo(e, 'horario')} className='d-none'>Horario</a>
                                 <a href="https://humanobarberchile.agendapro.com/cl/workflow?local=27344" target='_blank' className='d-none'>Agendar</a>
                             </div>

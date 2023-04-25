@@ -3,7 +3,7 @@ import producto2 from '../../assets/productos/producto2.png';
 
 export const Productos = () => {
     return (
-        <div className='productos-container'>
+        <div id='productos' className='productos-container'>
             <div className="title-productos">
                 <h3>Nuestros productos</h3>
 
