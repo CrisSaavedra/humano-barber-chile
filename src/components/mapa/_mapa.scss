@@ -1,9 +1,12 @@
 @use'../../sass/mixins' as mix;
 
 .mapa-container {
-    
-    height: 100vh;
-    background-color: var(--black);
+
+    height: 90vh;
+    min-height: 80rem;
+    background: rgb(0, 0, 3);
+    // background: linear-gradient(180deg, rgba(0, 0, 3, 1) 91%, rgba(222, 222, 222, 1) 100%);
+
 
     @include mix.flex-standard($flex: column, $items: center, $justify: center);
 
@@ -16,6 +19,7 @@
 
 
             h3 {
+
                 // font-family: var(--3font);
                 font-size: 3.3rem;
                 font-weight: 800;
@@ -24,7 +28,8 @@
         }
 
         svg {
-            margin-top: 2rem;
+
+            margin-bottom: 1rem;
             width: 4.5rem;
 
             path {
@@ -58,11 +63,15 @@
             border: 0;
             width: 100%;
         }
+
+        margin-bottom: 10rem;
     }
 
 
 
     @include mix.media-query(md) {
+        height: 100vh;
+
         .text {
 
 
@@ -99,18 +108,23 @@
     @include mix.media-query(l) {
         max-width: 250rem;
         margin: 0 auto;
-        @include mix.flex-standard($flex: row, $items: center, $justify:center);
+        @include mix.flex-standard($flex: row, $items: center, $justify: center);
         gap: 10rem;
+        height: 100vh;
+
         .text {
+            margin-bottom: 6rem;
             width: 30%;
+
             .title-mapa {
                 h3 {
-                    font-size: 5rem;
+                    font-size: 4.5rem;
+
                 }
             }
 
             svg {
-               
+
                 width: 5.5rem;
 
             }
@@ -123,8 +137,9 @@
 
         .mapa {
             width: 40%;
+
             iframe {
-                
+
                 height: 60rem;
             }
         }

@@ -8,6 +8,7 @@
     .nosotros-img {
         width: 100%;
         height: 100vh;
+        min-height: 80rem;
 
         @include mix.flex-standard($flex: column-reverse, $items: center, $justify: center);
         position: relative;

@@ -1,0 +1,193 @@
+@use'../../sass/mixins' as mix;
+//@include mix.flex-standard($flex: row, $items: center, $justify: end);
+//@include mix.media-query(l) {
+
+
+.productos-container {
+    background-color: var(--black);
+    min-height: 85rem;
+    @include mix.flex-standard($flex: column, $items: center, $justify: start);
+    width: 100%;
+    color: var(--white);
+
+    .title-productos {
+        margin-bottom: 6rem;
+        border-bottom: 1px solid var(--yellow);
+
+        h3 {
+            font-size: 3rem;
+        }
+    }
+
+
+    .productos {
+        @include mix.flex-standard($flex: column, $items: center, $justify: center);
+        gap: 2rem;
+
+
+        .producto {
+            height: 16rem;
+            @include mix.flex-standard($flex: row, $items: center, $justify: center);
+            gap: 1rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.069);
+
+
+            img {
+                width: 10rem;
+            }
+
+            .text-producto {
+                margin-top: 1rem;
+                @include mix.flex-standard($flex: column, $items: center, $justify: space-evenly);
+                height: 10rem;
+
+                h4 {
+                    font-size: 1.6rem;
+                    margin-top: 1.2rem;
+                }
+
+                p {
+                    font-size: 1.3rem;
+                    font-family: var(--3font);
+                    width: 18rem;
+                    color: var(--hover-white);
+                    margin-left: 0.5rem;
+                }
+            }
+
+
+            &:nth-child(1) {
+                border: none;
+            }
+
+            &:nth-child(2) {
+
+                flex-direction: row-reverse;
+
+            }
+
+            &:nth-child(4) {
+
+                flex-direction: row-reverse;
+            }
+
+            &:hover {
+                filter: brightness(1.2);
+            }
+        }
+
+
+
+    }
+
+
+    @include mix.media-query(md) {
+        min-height: 90vh;
+        height: 104rem;
+        @include mix.flex-standard($flex: column, $items: center, $justify: start);
+        width: 100%;
+        color: var(--white);
+
+        .title-productos {
+            margin-bottom: 6rem;
+
+            h3 {
+                font-size: 3.2rem;
+            }
+        }
+
+
+        .productos {
+            @include mix.flex-standard($flex: column, $items: center, $justify: center);
+
+            width: 98%;
+            gap: 4rem;
+
+            .producto {
+                gap: 6rem;
+                height: 18rem;
+               
+                img {
+                    width: 15rem;
+                    margin-top: 3rem;
+                }
+
+                .text-producto {
+                    margin-top: 1rem;
+                    height: 10rem;
+
+                    h4 {
+                        font-size: 2.3rem;
+                        margin-top: 3rem;
+                    }
+
+                    p {
+                        font-size: 1.7rem;
+
+                        margin-left: 0.5rem;
+                    }
+                }
+
+            }
+        }
+    }
+
+
+    @include mix.media-query(l) {
+        min-height: 90vh;
+        height: 82rem;
+        @include mix.flex-standard($flex: column, $items: center, $justify: start);
+        width: 100%;
+        color: var(--white);
+
+        .title-productos {
+            margin-bottom: 6rem;
+            margin-top: 3rem;
+            h3 {
+                font-size: 3.2rem;
+            }
+        }
+
+
+        .productos {
+            @include mix.flex-standard($flex: row, $items: center, $justify: center);
+            flex-wrap: wrap;
+            width: 98%;
+            max-width: 120rem;
+            gap: 6rem;
+
+            .producto {
+                gap: 6rem;
+                height: 22rem;
+               
+                img {
+                    width: 20rem;
+                    margin-top: 3rem;
+                }
+
+                .text-producto {
+                    margin-top: 1rem;
+                    height: 10rem;
+
+                    h4 {
+                        font-size: 2.6rem;
+                        margin-top: 3rem;
+                    }
+
+                    p {
+                        font-size: 1.8rem;
+                        margin-left: 0.5rem;
+                    }
+                }
+
+
+                &:nth-child(2) {
+                    border: none;
+                }
+    
+
+            }
+        }
+    }
+
+}
