@@ -1,3 +1,5 @@
+@use'./sass/mixins' as mix;
+
 .humano-container {
     min-width: 327px;
     opacity: 0;
@@ -8,13 +10,19 @@
 
         position: absolute;
         width: 100%;
-        height: 100vh;
+        height: 90vh;
         z-index: -100;
         background-image: url('./assets/inicio/fondoInicio.webp');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         filter: brightness(0.6);
+
+        @include mix.media-query(l) {
+            height: 100vh;
+        }
+        
+
     }
 
 }

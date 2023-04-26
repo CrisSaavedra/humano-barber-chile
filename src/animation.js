@@ -6,14 +6,14 @@ export const addEventWhenScroll = () => {
         let scroll = window.scrollY;
 
         //-----------navbar----------
-        if (scroll > 40) {
+        if (scroll > 1) {
             navbar.style.position = 'fixed';
             navbar.style.backgroundColor = 'var(--black)';
             navbar.style.opacity = '0.9';
             navbar.classList.add('on-fixed');
             navbar.classList.remove('initial-state');
         }
-        if (scroll < 40) {
+        if (scroll < 5) {
             navbar.classList.add('initial-state');
             navbar.classList.remove('on-fixed');
         }
@@ -26,7 +26,7 @@ export const addEventWhenScroll = () => {
 
         //---galeria
 
-        if (scroll > 1100) {
+        if (scroll > 1000) {
             algoDeNosotros();
         }
 

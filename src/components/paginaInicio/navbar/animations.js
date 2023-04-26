@@ -2,13 +2,17 @@
 export const clickBurger = (e) => {
     e.preventDefault();
     let burger = document.getElementById('burger');
+    let clickout = document.getElementById('clickout');
     burger.classList.add('close-burger');
+    clickout.style.visibility = 'visible';
 }
 
 export const clickClose = (e) => {
     e.preventDefault();
     let options = document.getElementById('options');
     options.classList.add('close-options');
+    let clickout = document.getElementById('clickout');
+    clickout.style.visibility = 'hidden';
 }
 
 export const animationsBurger = () => {
@@ -66,6 +70,17 @@ export const animationOptions = () => {
         }
 
 
+    })
+}
+
+
+export const clickoutAnimation = () => {
+    let clickout = document.getElementById('clickout');
+    let options = document.getElementById('options');
+
+    clickout.addEventListener('click', () => {
+        options.classList.add('close-options');
+        clickout.style.visibility = 'hidden';
     })
 }
 

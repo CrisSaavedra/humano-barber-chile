@@ -9,7 +9,7 @@
     z-index: 100;
     position: relative;
     // background-color: black;
- 
+
 
     .background-container {
         padding-top: 1rem;
@@ -17,8 +17,8 @@
         position: fixed;
         width: inherit;
         transition: all 0.3s;
-       
-    
+
+
         .position-container {
             @include mix.flex-standard($flex: row, $items: center, $justify: space-between);
             width: 90%;
@@ -45,9 +45,23 @@
                     }
                 }
 
+
+
+                .clickout {
+                    position:fixed;
+                    
+                    height: 100vh;
+                    width: 100%;
+                    left: 0;
+                    top: 0;
+                    z-index: 10;
+                    visibility:hidden;
+                }
+
+
                 .options {
                     z-index: 100;
-                    position: absolute;
+                    position: fixed;
                     background-color: var(--black);
                     border-radius: 1% 0% 0% 1%;
                     right: 0rem;
