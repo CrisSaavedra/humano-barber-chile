@@ -1,7 +1,11 @@
 .humano-container {
     min-width: 327px;
+    opacity: 0;
+    animation: opacityChange 1.2s linear 0.5s forwards;
+    overflow: hidden;
 
     .background-img {
+
         position: absolute;
         width: 100%;
         height: 100vh;
@@ -15,34 +19,74 @@
 
 }
 
+//------------- effects ---------------
 
-.initial-state{
+
+@keyframes fromLeft {
+
+    // Come from the left element on scroll
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes fromRight {
+
+    // Come from the right element on scroll
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes opacityChange {
+
+    // change opacity 
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.initial-state {
+    //navbar effect
     animation: initialState .1s linear;
 }
 
 @keyframes initialState {
-    0%{
+    0% {
         transform: translateY(0%);
     }
-    100%{
-        transform: translateY(-100%);
-       
+
+    100% {
+        transform: translateY(0%);
+
     }
 }
 
 
-.on-fixed{
-    animation: onFixed .25s linear;
+.on-fixed {
+    //navbar effect
+    animation: onFixed .5s linear;
 }
 
 @keyframes onFixed {
-    0%{
-        transform: translateY(-100%);
+    0% {
+        transform: translateY(0%);
     }
-    100%{
+
+    100% {
         transform: translateY(0);
     }
 }
-
-
-

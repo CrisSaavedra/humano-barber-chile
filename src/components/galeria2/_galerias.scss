@@ -5,10 +5,12 @@
 .galerias-container {
     padding: 10rem auto;
     background: rgb(0,0,3);
+    transform: translateX(-100%);
 
     @include mix.flex-standard($flex: column, $items: center, $justify: center);
 
     .title-galerias {
+        
         margin-top: 8rem;
         .heading {
             margin: 4rem auto;

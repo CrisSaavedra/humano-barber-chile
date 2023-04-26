@@ -339,6 +339,7 @@ body {
   font-family: var(--principalFont);
   font-size: 1.6rem;
   line-height: 1.5;
+  background-color: var(--black);
 }
 
 /*GLOBALS*/
@@ -378,6 +379,9 @@ a {
 
 .humano-container {
   min-width: 327px;
+  opacity: 0;
+  animation: opacityChange 1.2s linear 0.5s forwards;
+  overflow: hidden;
 }
 .humano-container .background-img {
   position: absolute;
@@ -391,6 +395,30 @@ a {
   filter: brightness(0.6);
 }
 
+@keyframes fromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes fromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes opacityChange {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .initial-state {
   animation: initialState 0.1s linear;
 }
@@ -400,16 +428,16 @@ a {
     transform: translateY(0%);
   }
   100% {
-    transform: translateY(-100%);
+    transform: translateY(0%);
   }
 }
 .on-fixed {
-  animation: onFixed 0.25s linear;
+  animation: onFixed 0.5s linear;
 }
 
 @keyframes onFixed {
   0% {
-    transform: translateY(-100%);
+    transform: translateY(0%);
   }
   100% {
     transform: translateY(0);
@@ -772,6 +800,7 @@ a {
   flex-direction: column-reverse;
   align-items: center;
   justify-content: center;
+  opacity: 0;
 }
 .nosotros-container .nosotros-img {
   width: 100%;
@@ -1099,6 +1128,7 @@ a {
   height: 90vh;
   min-height: 80rem;
   background: rgb(0, 0, 3);
+  transform: translateX(-100%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1203,6 +1233,7 @@ a {
 .galerias-container {
   padding: 10rem auto;
   background: rgb(0, 0, 3);
+  transform: translateX(-100%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1354,6 +1385,7 @@ a {
   justify-content: start;
   width: 100%;
   color: var(--white);
+  transform: translateX(100%);
 }
 .productos-container .title-productos {
   margin-bottom: 6rem;

@@ -22,7 +22,7 @@ import img_10 from "../../assets/galeria/galeria10.jpg";
 export const Galerias = () => {
     return (
 
-        <div className='galerias-container'>
+        <div id='galeria' className='galerias-container'>
 
 
             <div className='title-galerias'>

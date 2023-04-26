@@ -9,7 +9,7 @@
     @include mix.flex-standard($flex: column, $items: center, $justify: start);
     width: 100%;
     color: var(--white);
-
+    transform: translateX(100%);
     .title-productos {
         margin-bottom: 6rem;
         border-bottom: 1px solid var(--yellow);
