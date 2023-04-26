@@ -6,6 +6,7 @@
 .productos-container {
     background-color: var(--black);
     min-height: 85rem;
+    max-height: 85rem;
     @include mix.flex-standard($flex: column, $items: center, $justify: start);
     width: 100%;
     color: var(--white);
