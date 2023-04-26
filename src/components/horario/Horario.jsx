@@ -16,6 +16,7 @@ export const Horario = () => {
                             <p>Jueves</p>
                             <p>Viernes</p>
                             <p>Sábado</p>
+                            <p>Domingo</p>
                         </div>
 
                         <div className="row-horario">
@@ -25,14 +26,14 @@ export const Horario = () => {
                         </div>
 
                         <div className="row-horario">
-                            <p>09:30 - 20:30</p>
-                            <p>09:30 - 20:30</p>
-                            <p>09:30 - 20:30</p>
-                            <p>09:30 - 20:30</p>
-                            <p>09:30 - 20:30</p>
-                            <p>09:30 - 16:30</p>
+                            <p>09:30 - 19:00</p>
+                            <p>09:30 - 19:00</p>
+                            <p>09:30 - 19:00</p>
+                            <p>09:30 - 19:00</p>
+                            <p>09:30 - 19:00</p>
+                            <p>10:00 - 17:00</p>
+                            <p>10:00 - 17:00</p>
                             
-
                         </div>
 
                     </div>

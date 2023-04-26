@@ -966,7 +966,7 @@ a {
 .horario-container .container-background .background-2 .horario .row-horario .line-horario {
   border: 1px solid var(--yellow);
   width: 1px;
-  height: 39rem;
+  height: 45rem;
   margin-top: 2.6rem;
 }
 @media screen and (min-width: 576px) {
@@ -988,16 +988,18 @@ a {
   .horario-container .container-background .background-2 .horario .row-horario .line-horario {
     border: 1px solid var(--yellow);
     width: 1px;
-    height: 44rem;
+    height: 50rem;
     margin-top: 2.6rem;
   }
 }
 @media screen and (min-width: 1200px) {
   .horario-container {
     max-height: 75rem;
+    width: 110rem;
+    margin: 0 auto;
   }
   .horario-container .container-background .background-2 h3 {
-    font-size: 3.4rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
     margin-top: 3rem;
   }
@@ -1009,6 +1011,7 @@ a {
   }
   .horario-container .container-background .background-2 .horario .row-horario p {
     margin-left: 5rem;
+    margin-top: 1rem;
     font-size: 2.2rem;
     font-family: var(--2font);
   }
@@ -1021,7 +1024,7 @@ a {
 }
 
 .footer-container {
-  padding-top: 4rem;
+  padding-top: 7rem;
   background-color: var(--black);
   display: flex;
   flex-direction: column;
@@ -1109,6 +1112,7 @@ a {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    padding-top: 3rem;
   }
   .footer-container .container-logo-buttons .logo-footer img {
     margin-left: 0.6rem;

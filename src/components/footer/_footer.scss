@@ -5,7 +5,7 @@
 
 
  .footer-container {
-     padding-top: 4rem;
+     padding-top: 7rem;
      background-color: var(--black);
      @include mix.flex-standard($flex: column, $items: center, $justify: center);
      gap: 3rem;
@@ -98,7 +98,7 @@
              max-width: 100rem;
              gap: 0rem;
              @include mix.flex-standard($flex: row, $items: center, $justify: space-around);
-
+            padding-top: 3rem;
              .logo-footer {
                  img {
                      margin-left: .6rem;
