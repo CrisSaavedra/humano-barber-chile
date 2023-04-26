@@ -5,10 +5,13 @@
 
 .productos-container {
     background-color: var(--black);
-    min-height: 85rem;
-    max-height: 85rem;
-    @include mix.flex-standard($flex: column, $items: center, $justify: start);
+    // min-height: 85rem;
+    min-height: 100vh;
+    
     width: 100%;
+
+
+    @include mix.flex-standard($flex: column, $items: center, $justify: start);
     color: var(--white);
     transform: translateX(100%);
     .title-productos {

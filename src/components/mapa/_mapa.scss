@@ -2,10 +2,10 @@
 
 .mapa-container {
 
-    height: 90vh;
-    min-height: 80rem;
+    height: 100vh;
+    margin-top: 5rem;
+
     background: rgb(0, 0, 3);
-    // background: linear-gradient(180deg, rgba(0, 0, 3, 1) 91%, rgba(222, 222, 222, 1) 100%);
     transform: translateX(-100%);
 
     @include mix.flex-standard($flex: column, $items: center, $justify: center);
