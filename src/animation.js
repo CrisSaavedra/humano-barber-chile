@@ -56,21 +56,21 @@ export const addEventWhenScroll = () => {
 
 const nosotrosAnimations = () => { //maybe only text
     let element = document.getElementById('nosotros');
-    element.style.animation = 'opacityChange .8s ease-out forwards'
+    element.classList.add('opacityChange');
 }
 
 const algoDeNosotros = () => {
     let element = document.getElementById('galeria');
-    element.style.animation = 'fromLeft 1s ease-out forwards';
+    element.classList.add('fromLeft');
 }
 
 const productosAnimations = () => {
     let element = document.getElementById('productos');
-    element.style.animation = 'fromRight 1s ease-out forwards';
+    element.classList.add('fromRight');
 }
 
 
 const mapaAnimations = () => {
     let element = document.getElementById('mapa');
-    element.style.animation = 'fromLeft 1s ease-out forwards';
+    element.classList.add('fromLeft');
 }

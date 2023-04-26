@@ -30,43 +30,173 @@
 //------------- effects ---------------
 
 
-@keyframes fromLeft {
-
-    // Come from the left element on scroll
+@-webkit-keyframes fromLeft {
     0% {
+        -webkit-transform: translateX(-100%);
         transform: translateX(-100%);
     }
-
     100% {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+    }
+}
+
+@-moz-keyframes fromLeft {
+    0% {
+        -moz-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+    100% {
+        -moz-transform: translateX(0%);
+        transform: translateX(0%);
+    }
+}
+
+@-ms-keyframes fromLeft {
+    0% {
+        -ms-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+    100% {
+        -ms-transform: translateX(0%);
+        transform: translateX(0%);
+    }
+}
+
+@keyframes fromLeft {
+    0% {
+        -webkit-transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+    100% {
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        transform: translateX(0%);
+    }
+}
+
+/* Define la animación */
+.fromLeft {
+    -webkit-animation: fromLeft 1s ease-out forwards;
+    -moz-animation: fromLeft 1s ease-out forwards;
+    -ms-animation: fromLeft 1s ease-out forwards;
+    animation: fromLeft 1s ease-out forwards;
+}
+
+//////////////////////////////////////////////////
+
+
+
+
+@-webkit-keyframes fromRight {
+    0% {
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+    100% {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+    }
+}
+
+@-moz-keyframes fromRight {
+    0% {
+        -moz-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+    100% {
+        -moz-transform: translateX(0%);
+        transform: translateX(0%);
+    }
+}
+
+@-ms-keyframes fromRight {
+    0% {
+        -ms-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+    100% {
+        -ms-transform: translateX(0%);
         transform: translateX(0%);
     }
 }
 
 @keyframes fromRight {
-
-    // Come from the right element on scroll
     0% {
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        -ms-transform: translateX(100%);
         transform: translateX(100%);
     }
-
     100% {
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        -ms-transform: translateX(0%);
         transform: translateX(0%);
     }
 }
 
-@keyframes opacityChange {
+/* Define la animación */
+.fromRight {
+    -webkit-animation: fromRight 1s ease-out forwards;
+    -moz-animation: fromRight 1s ease-out forwards;
+    -ms-animation: fromRight 1s ease-out forwards;
+    animation: fromRight 1s ease-out forwards;
+}
 
-    // change opacity 
+
+///////////////////////////////////////////
+
+
+
+@-webkit-keyframes opacityChange {
     0% {
         opacity: 0;
     }
-
     100% {
         opacity: 1;
     }
 }
 
+@-moz-keyframes opacityChange {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
+@-ms-keyframes opacityChange {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes opacityChange {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Define la animación */
+.opacityChange {
+    -webkit-animation: opacityChange 1s ease-out forwards;
+    -moz-animation: opacityChange 1s ease-out forwards;
+    -ms-animation: opacityChange 1s ease-out forwards;
+    animation: opacityChange 1s ease-out forwards;
+}
+
+//////////////////
 .initial-state {
     //navbar effect
     animation: initialState .1s linear;
