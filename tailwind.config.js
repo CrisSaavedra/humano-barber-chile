@@ -1,3 +1,5 @@
+import { text } from 'stream/consumers';
+
 /** @type {import('tailwindcss').Config} */
 export default {
     darkMode: ["class"],
@@ -8,7 +10,9 @@ export default {
   theme: {
   	extend: {
       fontFamily: {
-        'kanit': ['Kanit', 'sans-serif']
+        'kanit': ['Kanit', 'sans-serif'],
+		'antonio': ['Antonio', 'sans-serif'],
+		'libre': ['Libre Franklin', 'sans-serif']
       },
   		borderRadius: {
   			lg: 'var(--radius)',
@@ -16,6 +20,8 @@ export default {
   			sm: 'calc(var(--radius) - 4px)'
   		},
   		colors: {
+
+			'yellow': '#d1d11e',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {

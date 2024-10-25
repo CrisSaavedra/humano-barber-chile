@@ -1,7 +1,7 @@
 function SectionOne() {
     return (
         <>
-            <section className=" w-full z-10 h-full flex flex-col justify-center items-center mt-[24%]">
+            <section className=" w-full z-10 h-full flex flex-col items-center mt-32">
                 <div className=" font-medium text-center text-white">
                     <h5 className="text-5xl">HUMANO</h5>
                     <h4 className="text-8xl font-semibold realitve">BARBER <span className="text-2xl absolute">®</span></h4>
