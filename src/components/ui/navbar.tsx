@@ -1,11 +1,38 @@
+import { useEffect, useState } from "react";
+
+
 function Navbar() {
+
+    const [background, setBackground] = useState("transparent");
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollTop = window.scrollY; // Distancia desplazada desde la parte superior
+            if (scrollTop > 1) { // Cambia 50 por el valor de desplazamiento deseado
+                setBackground("bg-black opacity-85"); // Deja esto como el fondo que quieras
+            } else {
+                setBackground("");
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        // Cleanup del listener al desmontar el componente
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
+
+
+
 
     return (
         <>
-            <nav className="sticky top-0 z-10 w-full  py-2 px-9 flex justify-between h-28  ">
-                <img src="src/assets/logo.webp" alt="logo" style={{ width: "85px", height: "85px" }} /> 
+            <nav id="navbar" className={"sticky top-0 z-10 w-full  py-1 px-9 flex justify-between  transition transition-opacity duration-700 " + background} >
+                <img src="src/assets/logo.webp" alt="logo" style={{ width: "80px", height: "80px" }} />
                 <button>
-                    <svg width="45" enable-background="new 0 0 12 12" id="burger" version="1.1" viewBox="0 0 12 12" ><g><rect fill="#cecece" height="1" width="11" x="0.5" y="5.5"></rect><rect fill="#cecece" height="1" width="11" x="0.5" y="2.5"></rect><rect fill="#cecece" height="1" width="11" x="0.5" y="8.5"></rect></g></svg>
+                    <svg width="45" enableBackground="new 0 0 12 12" id="burger" version="1.1" viewBox="0 0 12 12" ><g><rect fill="#cecece" height="1" width="11" x="0.5" y="5.5"></rect><rect fill="#cecece" height="1" width="11" x="0.5" y="2.5"></rect><rect fill="#cecece" height="1" width="11" x="0.5" y="8.5"></rect></g></svg>
                 </button>
             </nav>
         </>
