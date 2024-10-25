@@ -1,5 +1,5 @@
 import './App.css'
-import HomeLayout from './pages/homeLayout'
+import HomeLayout from './layouts/homeLayout'
 
 function App() {
   
