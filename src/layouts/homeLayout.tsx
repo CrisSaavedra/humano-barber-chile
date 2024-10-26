@@ -1,6 +1,7 @@
 import Navbar from "@/components/ui/navbar";
 import SectionOne from "../pages/sectionOne";
 import SectionTwo from "@/pages/sectionTwo";
+import SectionThree from "@/pages/sectionThree";
 
 function HomeLayout() {
 
@@ -12,6 +13,7 @@ function HomeLayout() {
                 <Navbar />
                 <SectionOne />
                 <SectionTwo />
+                <SectionThree />
             </main>
         </>
     );
