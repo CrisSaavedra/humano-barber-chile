@@ -1,8 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@layer base {
-  :root {
+
+@layer base
+{
+  :root
+  {
     --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;
     --card: 0 0% 100%;
@@ -29,7 +32,9 @@
     --chart-5: 27 87% 67%;
     --radius: 0.5rem
   }
-  .dark {
+
+  .dark
+  {
     --background: 240 10% 3.9%;
     --foreground: 0 0% 98%;
     --card: 240 10% 3.9%;
@@ -56,33 +61,46 @@
     --chart-5: 340 75% 55%
   }
 }
-@layer base {
-  * {
+
+@layer base
+{
+  *
+  {
     @apply border-border;
   }
-  body {
+
+  body
+  {
     @apply bg-background text-foreground;
   }
 }
 
 
-.swiper {
+.swiper
+{
   width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
-.swiper-slide {
+.swiper-slide
+{
   background-position: center;
   background-size: cover;
   width: 300px;
   height: 300px;
-  padding-left: 4rem;
+  padding-left: 3.5rem;
 }
 
-.swiper-slide img {
+.swiper-slide img
+{
   display: block;
   width: 240px;
   /* width: ; */
 }
 
+.swiper-pagination-bullets{
+  .swiper-pagination-bullet{
+    background-color: rgb(129, 129, 129);
+  }
+}

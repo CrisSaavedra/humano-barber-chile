@@ -26,8 +26,8 @@ function SectionThree() {
 
     return (
         <>
-            <section className='h-dvh bg-black flex flex-col justify-center items-center'>
-                <h3 className="border-b border-yellow font-antonio text-white text-2xl">
+            <section className='h-[550px] bg-black flex flex-col justify-center items-center'>
+                <h3 className="border-b border-yellow font-antonio text-white text-3xl font-thin"> 
                     Algo de nosotros
                 </h3>
                 <div className='mt-10 w-[350px]' >
