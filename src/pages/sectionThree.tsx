@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, A11y, EffectCoverflow } from 'swiper/modules';
+import { Pagination, EffectCoverflow } from 'swiper/modules';
 
 import 'swiper/swiper-bundle.css';
 
@@ -19,41 +19,39 @@ function SectionThree() {
 
     const listImages = urlImages.map((url, index) => (
         <SwiperSlide key={index}>
-            <img src={url} alt={`Slide ${index + 1}`} className='h-[270px] rounded '  />
+            <img src={url} alt={`Slide ${index + 1}`} className='h-[320px] rounded ' />
         </SwiperSlide>
     ))
 
 
     return (
         <>
-            <section className='h-dvh bg-black  justify-center items-center'>
-                <h3 className="border-b border-yellow font-antonio text-white text-2xl ">Algo de nosotros</h3>
-                <div className=' mt-10  '>
+            <section className='h-dvh bg-black flex flex-col justify-center items-center'>
+                <h3 className="border-b border-yellow font-antonio text-white text-2xl">
+                    Algo de nosotros
+                </h3>
+                <div className='mt-10 w-[350px]' >
                     <Swiper
+                        effect={'coverflow'}
+                        grabCursor={true}
                         centeredSlides={true}
-                        roundLengths={true}
-                        // loopPreventsSliding={false}
-                        modules={[A11y, EffectCoverflow, Pagination]}
-                        spaceBetween={0}
-                        // slidesPerView={3}
+                        slidesPerView={'auto'}
+                        spaceBetween={-100}
                         loop={true}
-                        effect='coverflow'
-                        coverflowEffect={{depth: 150, rotate: 0, stretch: 15}}
-                       
-                        
-
-                    // onSwiper={(swiper) => console.log(swiper)}
-                    // onSlideChange={() => console.log('slide change')}
+                        coverflowEffect={{
+                            rotate: 0,
+                            stretch: 0,
+                            depth: 100,
+                            modifier: 2,
+                            slideShadows: true,
+                        }}
+                        pagination={true}
+                        modules={[EffectCoverflow, Pagination]}
+                        className="mySwiper"
                     >
-
-                        {
-                            listImages
-                        }
+                        {listImages}
                     </Swiper>
                 </div>
-
-
-
             </section>
         </>
     );
