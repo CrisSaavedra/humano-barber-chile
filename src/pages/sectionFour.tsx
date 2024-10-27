@@ -30,23 +30,23 @@ function SectionFour() {
 
         if (index % 2 === 0) {
             return (
-                <image className={"flex px-10 align-middle my-5 justify-cente gap-10 "} >
+                <div className={"flex px-10 align-middle my-5 justify-cente gap-10 "} key={index+ product.name} >
                     <img src={product.image} alt={product.name} width={product.width} className="hover:brightness-125 transition" />
                     <div className="flex  flex-col  justify-center items-center gap-5">
                         <p className="font-thin text-white font-antonio md:text-xl">{product.name}</p>
                         <p className="text-center text-zinc-500">{product.decription}</p>
                     </div>
-                </image>
+                </div>
             );
         }else{
             return (
-                <image className="flex px-10 align-middle my-5 justify-cente gap-10" >
+                <div className="flex px-10 align-middle my-5 justify-cente gap-10"  key={index+ product.name}>
                     <div className="flex  flex-col  justify-center items-center gap-5">
                         <p className="font-thin text-white font-antonio md:text-xl">{product.name}</p>
                         <p className="text-center text-zinc-500">{product.decription}</p>
                     </div>
                     <img src={product.image} alt={product.name} width={product.width} className="hover:brightness-125 transition" />
-                </image>
+                </div>
             );
         }
     })
