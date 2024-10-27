@@ -54,7 +54,7 @@ function SectionFour() {
 
     return (
         <>
-            <section className="min-h-dvh flex flex-col items-center bg-black py-10">
+            <section className=" flex flex-col items-center bg-black py-10">
                 <h3 className="border-b border-yellow font-antonio text-white text-3xl font-thin">Nuestros productos</h3>
                 <div className="mt-20 flex flex-col md:flex-row md:gap-2 flex-wrap gap-10 md:justify-center md:max-w-[1000px] ">
                     {

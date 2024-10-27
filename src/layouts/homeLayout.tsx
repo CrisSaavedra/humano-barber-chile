@@ -3,6 +3,7 @@ import SectionOne from "../pages/sectionOne";
 import SectionTwo from "@/pages/sectionTwo";
 import SectionThree from "@/pages/sectionThree";
 import SectionFour from "@/pages/sectionFour";
+import SectionFive from "@/pages/sectionFive";
 
 function HomeLayout() {
 
@@ -16,6 +17,7 @@ function HomeLayout() {
                 <SectionTwo />
                 <SectionThree />
                 <SectionFour />
+                <SectionFive />
             </main>
         </>
     );
