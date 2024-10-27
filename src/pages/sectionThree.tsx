@@ -30,7 +30,7 @@ function SectionThree() {
                 <h3 className="border-b border-yellow font-antonio text-white text-3xl font-thin"> 
                     Algo de nosotros
                 </h3>
-                <div className='mt-10 w-[350px]' >
+                <div className='mt-10 w-[350px]'>
                     <Swiper
                         effect={'coverflow'}
                         grabCursor={true}

@@ -28,10 +28,9 @@ function SectionFour() {
 
     const showImages = listOfProducts.map((product, index) => {
 
-       
         if (index % 2 === 0) {
             return (
-                <image className="flex px-10 align-middle my-5 justify-cente gap-10" >
+                <image className={"flex px-10 align-middle my-5 justify-cente gap-10 "} >
                     <img src={product.image} alt={product.name} width={product.width} className="hover:brightness-125 transition" />
                     <div className="flex  flex-col  justify-center items-center gap-5">
                         <p className="font-thin text-white font-antonio md:text-xl">{product.name}</p>
@@ -57,7 +56,7 @@ function SectionFour() {
         <>
             <section className="min-h-dvh flex flex-col items-center bg-black py-10">
                 <h3 className="border-b border-yellow font-antonio text-white text-3xl font-thin">Nuestros productos</h3>
-                <div className="mt-20 flex flex-col md:flex-row md:gap-2 flex-wrap gap-10 md:justify-center ">
+                <div className="mt-20 flex flex-col md:flex-row md:gap-2 flex-wrap gap-10 md:justify-center md:max-w-[1000px] ">
                     {
                         showImages
                     }
