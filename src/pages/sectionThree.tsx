@@ -4,6 +4,7 @@ import { Pagination, EffectCoverflow } from 'swiper/modules';
 import 'swiper/swiper-bundle.css';
 
 
+
 function SectionThree() {
 
     const urlImages = [
@@ -30,20 +31,18 @@ function SectionThree() {
                 <h3 className="border-b border-yellow font-antonio text-white text-3xl font-thin"> 
                     Algo de nosotros
                 </h3>
-                <div className='mt-10 w-[350px]'>
+                <div className='mt-10 w-[350px] md:w-[600px]'>
                     <Swiper
                         effect={'coverflow'}
                         grabCursor={true}
                         centeredSlides={true}
-                        slidesPerView={'auto'}
-                        spaceBetween={-100}
                         loop={true}
                         coverflowEffect={{
                             rotate: 0,
-                            stretch: 0,
-                            depth: 100,
-                            modifier: 2,
-                            slideShadows: true,
+                            // stretch: 100,
+                            depth: 120,
+                            modifier: 3,
+                            slideShadows: false,
                         }}
                         pagination={true}
                         modules={[EffectCoverflow, Pagination]}

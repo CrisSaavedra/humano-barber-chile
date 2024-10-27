@@ -92,6 +92,7 @@
   padding-left: 3.5rem;
 }
 
+
 .swiper-slide img
 {
   display: block;
@@ -99,8 +100,32 @@
   /* width: ; */
 }
 
-.swiper-pagination-bullets{
-  .swiper-pagination-bullet{
+.swiper-pagination-bullets
+{
+  .swiper-pagination-bullet
+  {
     background-color: rgb(129, 129, 129);
   }
+}
+
+
+@media (min-width: 768px)
+{
+  .swiper-slide
+  {
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: 300px;
+    padding-left: 10.5rem;
+  }
+
+
+  .swiper-slide img
+  {
+    display: block;
+    width: 250px;
+   
+  }
+
 }
