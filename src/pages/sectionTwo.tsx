@@ -1,9 +1,9 @@
 function SectionTwo() {
     return (
         <>
-            <section className="h-dvh relative flex justify-center items-center">
+            <section className="h-dvh relative flex justify-center items-center ">
                 <div className="h-dvh bg-[url('src/assets/picture-1.jpg')] bg-cover bg-center absolute w-full z-[-6] grayscale" ></div>
-                <main className="w-[85%] h-[90%] relative ">
+                <main className="w-[85%] h-[90%] relative max-w-[1000px]">
                     <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center bg-black z-[-5] opacity-85"></div>
                     <div className="text-white flex flex-col items-center justify-center w-full h-full font-antonio p-10">
                         <h3 className="text-2xl text-yellow font-medium">HUMANO BARBER CHILE</h3>
