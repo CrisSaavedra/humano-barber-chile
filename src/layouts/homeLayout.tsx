@@ -13,21 +13,23 @@ function HomeLayout() {
 
     return (
         <>
-            <main className="font-kanit z-[-22] opacityAnimation">
-                <div className="h-dvh bg-[url('src/assets/backgorund-image.webp')] bg-cover bg-center absolute w-full top-0 z-[-1]" style={{ filter: "brightness(.6)" }}></div>
-                <SideBar />
-                <Navbar />
-                <SectionOne />
-                <SectionTwo />
-                <div className="bg-black overflow-hidden">
-                    <SectionThree />
-                    <SectionFour />
-                    <SectionFive />
-                    <SectionSix />
-                    <Footer />
-                </div>
+            <div className="overflow-hidden">
+                <main className="font-kanit z-[-22] opacityAnimation">
+                    <div className="h-dvh bg-[url('src/assets/backgorund-image.webp')] bg-cover bg-center absolute w-full top-0 z-[-1]" style={{ filter: "brightness(.6)" }}></div>
+                    <SideBar />
+                    <Navbar />
+                    <SectionOne />
+                    <SectionTwo />
+                    <div className="bg-black">
+                        <SectionThree />
+                        <SectionFour />
+                        <SectionFive />
+                        <SectionSix />
+                        <Footer />
+                    </div>
 
-            </main>
+                </main>
+            </div>
         </>
     );
 }
