@@ -1,7 +1,7 @@
 function SectionOne() {
     return (
         <>
-            <section style={{ height: "calc(100dvh - 90px)" }}>
+            <section style={{ height: "calc(100dvh - 100px)" }}>
                 <div className=" w-full z-10 h-full flex flex-col items-center justify-center">
                     <div className=" font-medium text-center text-white">
                         <h5 className="md:text-5xl text-4xl">HUMANO</h5>
