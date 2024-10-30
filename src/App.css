@@ -1,0 +1,41 @@
+.opacityAnimation {
+    animation: example 2s ease-in-out;
+}
+
+@keyframes example {
+    from {filter: brightness(0);}
+    to {filter: brightness(1);}
+}
+/* ---------------------------------- */
+
+.leftToRight {
+    animation: leftToRight 1.5s ease-in-out;
+}
+
+@keyframes leftToRight {
+    from {transform: translateX(-160%);}
+    to {transform: translateX(0%);}
+}
+
+/* ---------------------------------- */
+
+.rightToLeft {
+    animation: rightToLeft 1.5s ease-in-out;
+}
+
+@keyframes rightToLeft {
+    from {transform: translateX(160%);}
+    to {transform: translateX(0%);}
+}
+
+/* ---------------------------------- */
+
+
+.invisibleToVisile{
+    animation: invisibleToVisile 1.2s ease-in-out;
+}
+
+@keyframes invisibleToVisile {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}

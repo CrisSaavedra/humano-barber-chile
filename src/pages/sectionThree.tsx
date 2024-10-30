@@ -2,10 +2,30 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, EffectCoverflow } from 'swiper/modules';
 
 import 'swiper/swiper-bundle.css';
+import { useEffect } from 'react';
 
 
 
 function SectionThree() {
+    useEffect(() => {
+        const sectionElement = document.querySelector("#photoSection");
+
+        const top = sectionElement?.getBoundingClientRect().top;
+        const handleScroll = () => {
+            const scrollTop = window.scrollY;
+            if (!sectionElement) return;
+            if (scrollTop + 1000 > top!) {
+                sectionElement?.classList.add("rightToLeft");
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        // Cleanup del listener al desmontar el componente
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
 
     const urlImages = [
         'src/assets/rol-1.jpg',
@@ -27,7 +47,7 @@ function SectionThree() {
 
     return (
         <>
-            <section className='h-[550px] bg-black flex flex-col justify-center items-center'>
+            <section id='photoSection' className='h-[550px] bg-black flex flex-col justify-center items-center'>
                 <h3 className="border-b border-yellow font-antonio text-white text-3xl font-thin"> 
                     Algo de nosotros
                 </h3>

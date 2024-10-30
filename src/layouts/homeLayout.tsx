@@ -12,16 +12,19 @@ function HomeLayout() {
 
     return (
         <>
-            <main className="font-kanit z-[-22]">
+            <main className="font-kanit z-[-22] opacityAnimation overflow-hidden">
                 <div className="h-dvh bg-[url('src/assets/backgorund-image.webp')] bg-cover bg-center absolute w-full top-0 z-[-1]" style={{ filter: "brightness(.6)" }}></div>
                 <Navbar />
                 <SectionOne />
                 <SectionTwo />
-                <SectionThree />
-                <SectionFour />
-                <SectionFive />
-                <SectionSix />
-                <Footer />
+                <div className="bg-black">
+                    <SectionThree />
+                    <SectionFour />
+                    <SectionFive />
+                    <SectionSix />
+                    <Footer />
+                </div>
+
             </main>
         </>
     );
