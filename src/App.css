@@ -54,7 +54,7 @@
 /* ---------------------------------- */
 
 .closeSideBar {
-    animation: closeSideBar .6s ease-in forwards;
+    animation: closeSideBar .5s ease-in forwards;
 }
 
 @keyframes closeSideBar {
@@ -65,7 +65,7 @@
 /* ---------------------------------- */
 
 .openSideBar {
-    animation: openSideBar .6s ease-out forwards;
+    animation: openSideBar .5s ease-out forwards;
 }
 
 @keyframes openSideBar {
