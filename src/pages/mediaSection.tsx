@@ -7,6 +7,8 @@ import { useEffect } from 'react';
 
 
 function MediaSection() {
+    const stretch = window.innerWidth > 768 ? 100 : 0;
+
     useEffect(() => {
         const sectionElement = document.querySelector("#photoSection");
 
@@ -59,7 +61,7 @@ function MediaSection() {
                         loop={true}
                         coverflowEffect={{
                             rotate: 0,
-                            // stretch: 100,
+                            stretch,
                             depth: 120,
                             modifier: 3,
                             slideShadows: false,
