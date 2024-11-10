@@ -13,11 +13,12 @@ function HomeLayout() {
 
     return (
         <>
-            <div className="overflow-hidden relative">
+            {/* <div className="opacityAnimation absolute w-full h-dvh z-[100000] bg-black"></div> */}
+            <div className="overflow-hidden relative ">
+                <SideBar />
+                <Navbar />
                 <main className="font-kanit z-[-22] opacityAnimation">
-                    <div className="h-dvh bg-[url('src/assets/backgorund-image.webp')] bg-cover bg-center absolute w-full top-0 z-[-1]" style={{ filter: "brightness(.6)" }}></div>
-                    <SideBar />
-                    <Navbar />
+                    <div className="h-dvh bg-[url('src/assets/backgorund-image.webp')] bg-cover bg-center absolute w-full top-0 z-[-1] " style={{ filter: "brightness(.6)" }}></div>
                     <SectionOne />
                     <SectionTwo />
                     <div className="bg-black">

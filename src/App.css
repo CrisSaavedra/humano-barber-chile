@@ -1,8 +1,8 @@
 .opacityAnimation {
-    animation: example 2s ease-in-out;
+    animation: opacityAnimation 1.4s ease-in-out;
 }
 
-@keyframes example {
+@keyframes opacityAnimation {
     from {filter: brightness(0);}
     to {filter: brightness(1);}
 }
@@ -72,4 +72,7 @@
     from {transform: translateX(100%);}
     to {transform: translateX(0%);}
 }
+
+
+
 
