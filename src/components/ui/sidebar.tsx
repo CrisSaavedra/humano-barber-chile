@@ -2,6 +2,33 @@ import { closeOpenSideBar } from "@/helpers/closeOpenSidebar";
 
 function SideBar() {
 
+    const scrollToElement = (elementId: string) => {
+        const element = document.querySelector(elementId);
+        if (element) {
+            const topPosition = element.getBoundingClientRect().top + window.scrollY;
+            window.scrollTo({ top: topPosition, behavior: 'smooth' });
+        }
+    };
+
+    const goToHome = (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+        event.preventDefault();
+        scrollToElement("#home");
+    }
+
+    const goToProducts = (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+        event.preventDefault();
+        scrollToElement("#sectionProducts");
+    };
+
+    const goToDirection = (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+        event.preventDefault();
+        scrollToElement("#sectionMap");
+    };
+
+    const goToHorario = (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+        event.preventDefault();
+        scrollToElement("#scheduleSection");
+    };
 
 
 
@@ -16,10 +43,10 @@ function SideBar() {
                     </header>
                     <nav className="w-full block text-zinc-200 font-light text-3xl">
                         <ul className="flex flex-col gap-10 py-12 ml-5">
-                            <li><a href="#">Inicio</a></li>
-                            <li><a href="#">Productos</a></li>
-                            <li><a href="#">Dirección</a></li>
-                            <li><a href="#">Horario</a></li>
+                            <li><a href="#" onClick={(e) => goToHome(e)}>Inicio</a></li>
+                            <li><a href="#" onClick={(e) => goToProducts(e)}>Productos</a></li>
+                            <li><a href="#" onClick={(e) => goToDirection(e)}>Dirección</a></li>
+                            <li><a href="#" onClick={(e) => goToHorario(e)}>Horario</a></li>
                             <li className="text-yellow"><a href="#">Agendar</a></li>
                         </ul>
                     </nav>
