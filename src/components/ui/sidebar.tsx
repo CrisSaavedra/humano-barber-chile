@@ -5,7 +5,7 @@ function SideBar() {
     const scrollToElement = (elementId: string) => {
         const element = document.querySelector(elementId);
         if (element) {
-            const topPosition = element.getBoundingClientRect().top + window.scrollY;
+            const topPosition = element.getBoundingClientRect().top + window.scrollY -120;
             window.scrollTo({ top: topPosition, behavior: 'smooth' });
         }
     };
