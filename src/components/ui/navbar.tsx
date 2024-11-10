@@ -1,12 +1,14 @@
 import { useEffect, useState } from "react";
+import { closeOpenSideBar } from "@/helpers/closeOpenSidebar";
 
 
 function Navbar() {
 
     const [background, setBackground] = useState("transparent");
-   
+    
 
     useEffect(() => {
+
         const handleScroll = () => {
             const scrollTop = window.scrollY; // Distancia desplazada desde la parte superior
             if (scrollTop > 1) { // Cambia 50 por el valor de desplazamiento deseado
@@ -25,21 +27,10 @@ function Navbar() {
     }, []);
 
 
-    const closeOpenSideBar = () => {
-        // const sidebar = document.querySelector("#sidebar")
-        // if (openSideBar) {
-        //     sidebar?.classList.add("closeSideBar");
-        //     setOpenSideBar(false);
-        // }
-    }
-
-
-
-
 
     return (
         <>
-            <nav  className={"sticky top-0 z-10 w-full h-[100px] py-3 px-9 flex justify-between transition duration-700 " + background} >
+            <nav  className={"fixed top-0 z-10 w-full h-[100px] py-3 px-9 flex justify-between transition duration-700 " + background} >
                 <img src="src/assets/logo.webp" alt="logo" style={{ width: "80px", height: "80px" }} />
                 <button onClick={closeOpenSideBar} className="pt-2">
                     <svg width="45" enableBackground="new 0 0 12 12" id="burger" version="1.1" viewBox="0 0 12 12" ><g><rect fill="#cecece" height="1" width="11" x="0.5" y="5.5"></rect><rect fill="#cecece" height="1" width="11" x="0.5" y="2.5"></rect><rect fill="#cecece" height="1" width="11" x="0.5" y="8.5"></rect></g></svg>

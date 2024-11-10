@@ -1,17 +1,8 @@
-import { useState } from "react";
+import { closeOpenSideBar } from "@/helpers/closeOpenSidebar";
 
 function SideBar() {
-    const [openSideBar, setOpenSideBar] = useState(true);
 
-    
 
-    const closeOpenSideBar = () => {
-        const sidebar = document.querySelector("#sidebar")
-        if (openSideBar) {
-            sidebar?.classList.add("closeSideBar");
-            setOpenSideBar(false);
-        }
-    }
 
 
     return (
@@ -19,7 +10,7 @@ function SideBar() {
             <section className="w-full overflow-hidden">
 
 
-                <div id="sidebar" className="fixed bg-black opacity-85 h-dvh w-full max-w-[220px] md:max-w-[300px] flex flex-col items-center right-0 z-[100] ">
+                <div id="sidebar" className="fixed bg-black opacity-85 h-dvh w-full max-w-[220px] md:max-w-[300px] flex flex-col items-center right-0 z-[100] " style={{ transform: "translateX(100%)" }}>
                     <header className="block w-full flex justify-end pt-5 pr-10">
                         <button onClick={closeOpenSideBar}><svg width="40" className="ci-primary options-in hover:opacity-85" id="xbtn" viewBox="0 0 512 512"><polygon fill="#cecece" points="427.314 107.313 404.686 84.687 256 233.373 107.314 84.687 84.686 107.313 233.373 256 84.686 404.687 107.314 427.313 256 278.627 404.686 427.313 427.314 404.687 278.627 256 427.314 107.313"></polygon></svg></button>
                     </header>

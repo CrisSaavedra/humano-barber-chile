@@ -1,11 +1,11 @@
 function SectionOne() {
     return (
         <>
-            <section style={{ height: "calc(100dvh - 100px)" }}>
-                <div className=" w-full z-10 h-full flex flex-col items-center justify-center">
+            <section className="h-dvh">
+                <div className=" w-full z-10 h-full flex flex-col items-center justify-center h-full">
                     <div className=" font-medium text-center text-white">
-                        <h5 className="md:text-5xl text-4xl">HUMANO</h5>
-                        <h4 className="md:text-8xl text-6xl font-semibold realitve">BARBER <span className="text-2xl absolute">®</span></h4>
+                        <h5 className="md:text-6xl text-4xl">HUMANO</h5>
+                        <h4 className="md:text-9xl text-6xl font-semibold realitve">BARBER <span className="text-2xl absolute">®</span></h4>
                     </div>
                     <a href="#" className="border-b border-yellow text-white mt-5 text-2xl ">Agendar Hora</a>
                     <div className="flex gap-5  w-full justify-end px-10 absolute bottom-10">
