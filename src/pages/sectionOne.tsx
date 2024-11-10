@@ -1,9 +1,9 @@
 function SectionOne() {
     return (
         <>
-            <section className="h-dvh">
+            <section className="h-dvh relative">
                 <div className=" w-full z-10 h-full flex flex-col items-center justify-center h-full">
-                    <div className=" font-medium text-center text-white">
+                    <div className=" font-medium text-center text-white ">
                         <h5 className="md:text-6xl text-4xl">HUMANO</h5>
                         <h4 className="md:text-9xl text-6xl font-semibold realitve">BARBER <span className="text-2xl absolute">®</span></h4>
                     </div>
