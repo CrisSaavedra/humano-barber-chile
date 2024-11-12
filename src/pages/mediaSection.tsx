@@ -32,16 +32,14 @@ function MediaSection() {
     const urlImages = [
         'src/assets/rol-1.jpg',
         'src/assets/rol-2.jpg',
-        'src/assets/rol-3.jpg',
         'src/assets/rol-4.jpg',
-        'src/assets/rol-5.jpg',
         'src/assets/rol-6.jpg',
         'src/assets/rol-7.jpg',
         'src/assets/rol-8.jpg',
     ]
 
     const listImages = urlImages.map((url, index) => (
-        <SwiperSlide key={index}>
+        <SwiperSlide key={index} className='w-[1000px]'>
             <img src={url} alt={`Slide ${index + 1}`} className='h-[320px] rounded ' />
         </SwiperSlide>
     ))
@@ -53,7 +51,7 @@ function MediaSection() {
                 <h3 className="border-b border-yellow font-antonio text-white text-3xl font-thin"> 
                     Algo de nosotros
                 </h3>
-                <div className='mt-10 w-[350px] md:w-[600px]'>
+                <div className='mt-10 w-[390px] md:w-[600px] ml-9 md:ml-0'>
                     <Swiper
                         effect={'coverflow'}
                         grabCursor={true}
@@ -66,6 +64,7 @@ function MediaSection() {
                             modifier: 3,
                             slideShadows: false,
                         }}
+                        
                         pagination={true}
                         modules={[EffectCoverflow, Pagination]}
                         className="mySwiper"
