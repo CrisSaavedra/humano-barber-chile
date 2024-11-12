@@ -7,6 +7,7 @@ import MapSection from "@/pages/mapSection";
 import Schedule from "@/pages/schedule";
 import Footer from "@/pages/footer";
 import SideBar from "@/components/ui/sidebar";
+import Reviews from "@/pages/reviews";
 
 function HomeLayout() {
 
@@ -25,6 +26,7 @@ function HomeLayout() {
                         <MediaSection />
                         <Products />
                         <MapSection />
+                        <Reviews />
                         <Schedule />
                         <Footer />
                     </div>
