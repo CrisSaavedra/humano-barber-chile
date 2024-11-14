@@ -26,8 +26,8 @@ function HomeLayout() {
                         <MediaSection />
                         <Products />
                         <MapSection />
-                        <Reviews />
                         <Schedule />
+                        <Reviews />
                         <Footer />
                     </div>
 
