@@ -1,9 +1,11 @@
+import logo from '@/assets/logo.webp';
+
 function Footer() {
     return (
         <footer className="bg-black text-white font-antonio font-light flex flex-col justify-center items-center pb-5">
             <div className=" flex flex-col md:flex-row justify-center items-center pt-10 pb-3 md:gap-60">
                 <div className="flex flex-col gap-2">
-                    <img src="src/assets/logo.webp" className="mx-auto" alt="logo" width={112} />
+                    <img src={logo} className="mx-auto" alt="logo" width={112} />
                     <p className="text-xl">Humano Barber Chile</p>
                 </div>
 

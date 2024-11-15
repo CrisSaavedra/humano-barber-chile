@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { closeOpenSideBar } from "@/helpers/closeOpenSidebar";
+import logo from '@/assets/logo.webp';
 
 
 function Navbar() {
@@ -31,7 +32,7 @@ function Navbar() {
     return (
         <>
             <nav  className={"fixed top-0 z-10 w-full h-[100px] py-3 px-9 flex justify-between transition duration-700 " + background} >
-                <img src="src/assets/logo.webp" alt="logo" style={{ width: "80px", height: "80px" }} />
+                <img src={logo} alt="logo" style={{ width: "80px", height: "80px" }} />
                 <button id="burger" onClick={closeOpenSideBar} className="pt-2">
                     <svg width="45" enableBackground="new 0 0 12 12" id="burger" version="1.1" viewBox="0 0 12 12" ><g><rect fill="#cecece" height="1" width="11" x="0.5" y="5.5"></rect><rect fill="#cecece" height="1" width="11" x="0.5" y="2.5"></rect><rect fill="#cecece" height="1" width="11" x="0.5" y="8.5"></rect></g></svg>
                 </button>

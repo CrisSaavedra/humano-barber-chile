@@ -4,7 +4,12 @@ import { Pagination, EffectCoverflow } from 'swiper/modules';
 import 'swiper/swiper-bundle.css';
 import { useEffect } from 'react';
 
-
+import rol1 from '@/assets/rol-1.jpg';
+import rol2 from '@/assets/rol-2.jpg';
+import rol4 from '@/assets/rol-4.jpg';
+import rol6 from '@/assets/rol-6.jpg';
+import rol7 from '@/assets/rol-7.jpg';
+import rol8 from '@/assets/rol-8.jpg';
 
 function MediaSection() {
     const stretch = window.innerWidth > 768 ? 100 : 0;
@@ -30,12 +35,12 @@ function MediaSection() {
     }, []);
 
     const urlImages = [
-        'src/assets/rol-1.jpg',
-        'src/assets/rol-2.jpg',
-        'src/assets/rol-4.jpg',
-        'src/assets/rol-6.jpg',
-        'src/assets/rol-7.jpg',
-        'src/assets/rol-8.jpg',
+        rol1,
+        rol2,
+        rol4,
+        rol6,
+        rol7,
+        rol8,
     ]
 
     const listImages = urlImages.map((url, index) => (
