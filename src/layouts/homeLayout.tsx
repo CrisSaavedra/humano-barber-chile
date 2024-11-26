@@ -14,11 +14,11 @@ function HomeLayout() {
 
     return (
         <>
-            {/* <div className="opacityAnimation absolute w-full h-dvh z-[100000] bg-black"></div> */}
+           
             <div className="overflow-hidden relative ">
                 <SideBar />
                 <Navbar />
-                <main className="font-kanit z-[-22] opacityAnimation">
+                <main className="font-kanit z-[-22] ">
                     
                     <LandingPage />
                     <AboutUs />

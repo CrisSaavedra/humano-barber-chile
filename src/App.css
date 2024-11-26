@@ -137,7 +137,7 @@
     }
 }
 
-
+/* ---------------------------------- */
 
 
 :root
@@ -149,3 +149,13 @@
 {
     height: var(--real-vh);
 }
+
+.app {
+    overflow: hidden;
+    filter: brightness(1);
+    transition: filter 1s ease-in-out; /* Controla la duración y suavidad */
+  }
+  
+  .app.dark-mode {
+    filter: brightness(0);
+  }
