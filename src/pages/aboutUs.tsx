@@ -3,7 +3,7 @@ import pictureOne from '@/assets/picture-1.jpg';
 function AboutUs() {
     return (
         <>
-            <section className="h-[700px] relative flex justify-center items-center ">
+            <section className="contenedor relative flex justify-center items-center ">
                 <div className="h-full bg-cover bg-center absolute w-full z-[-6] grayscale" style={{ backgroundImage: `url(${pictureOne})` }}></div>
                 <main className="w-[85%] h-[90%] relative max-w-[1000px]">
                     <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center bg-black z-[-5] opacity-85"></div>
