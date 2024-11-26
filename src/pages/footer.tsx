@@ -6,7 +6,7 @@ function Footer() {
             <div className=" flex flex-col md:flex-row justify-center items-center pt-10 pb-3 md:gap-60">
                 <div className="flex flex-col gap-2">
                     <img src={logo} className="mx-auto" alt="logo" width={112} />
-                    <p className="text-xl">Humano Barber Chile</p>
+                    <p className="text-xl">Humano Salón Barber</p>
                 </div>
 
                 <div className="flex flex-col gap-2 mt-8 md:mt-4 justify-center align-center">
@@ -22,7 +22,7 @@ function Footer() {
                 </div>
 
             </div>
-            <p className="mt-20 text-sm">HUMANO BARBER CHILE TODOS LOS DERECHOS RESERVADOS © </p>
+            <p className="mt-20 text-sm">HUMANO SALÓN BARBER TODOS LOS DERECHOS RESERVADOS © </p>
         </footer>
     );
 }
