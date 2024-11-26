@@ -1,4 +1,6 @@
 import './App.css'
+import Navbar from './components/ui/navbar';
+import SideBar from './components/ui/sidebar';
 import HomeLayout from './layouts/homeLayout'
 import { useEffect, useState } from "react";
 
@@ -16,7 +18,9 @@ function App() {
 
   return (
     <>
-      <main className={`app ${isAnimating ? "dark-mode" : ""}`}>
+     <SideBar />
+     <Navbar/>
+      <main className={`app ${isAnimating ? "dark-mode" : ""} `}>
         <HomeLayout />
       </main>
     </>

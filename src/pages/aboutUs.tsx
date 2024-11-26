@@ -1,10 +1,10 @@
-import pictureOne from '@/assets/picture-1.jpg';
+import pictureOne from '@/assets/nuevas-humano/bg-salon.jpeg.jpg';
 
 function AboutUs() {
     return (
         <>
             <section className="contenedor relative flex justify-center items-center ">
-                <div className="h-full bg-cover bg-center absolute w-full z-[-6] grayscale" style={{ backgroundImage: `url(${pictureOne})` }}></div>
+                <div className="h-full bg-cover bg-center absolute w-full z-[-6] " style={{ backgroundImage: `url(${pictureOne})` }}></div>
                 <main className="w-[85%] h-[90%] relative max-w-[1000px]">
                     <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center bg-black z-[-5] opacity-85"></div>
                     <div className="text-white flex flex-col items-center justify-center w-full h-full font-antonio p-10">

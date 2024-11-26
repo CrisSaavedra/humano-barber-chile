@@ -155,6 +155,7 @@
     background-color: black;
     filter: brightness(1);
     transition: filter 1s ease-in-out; /* Controla la duración y suavidad */
+    position: static;
   }
   
   .app.dark-mode {

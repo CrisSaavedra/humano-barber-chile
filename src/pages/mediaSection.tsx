@@ -4,12 +4,15 @@ import { Pagination, EffectCoverflow } from 'swiper/modules';
 import 'swiper/swiper-bundle.css';
 import { useEffect } from 'react';
 
-import rol1 from '@/assets/rol-1.jpg';
-import rol2 from '@/assets/rol-2.jpg';
-import rol4 from '@/assets/rol-4.jpg';
-import rol6 from '@/assets/rol-6.jpg';
-import rol7 from '@/assets/rol-7.jpg';
-import rol8 from '@/assets/rol-8.jpg';
+import rol1 from '@/assets/nuevas-humano/corte-1.jpg.jpg';
+import rol2 from '@/assets/nuevas-humano/corte-2.jpg.jpg';
+import rol4 from '@/assets/nuevas-humano/corte-3.jpg.jpg';
+import rol6 from '@/assets/nuevas-humano/corte-4.jpg.jpg';
+import rol7 from '@/assets/nuevas-humano/corte-5.jpg.jpg';
+import rol8 from '@/assets/nuevas-humano/corte-6.jpg.jpg';
+import rol9 from '@/assets/nuevas-humano/promo-1.jpeg.jpg';
+import rol10 from '@/assets/nuevas-humano/promo-2.jpeg.jpg';
+
 
 function MediaSection() {
     const stretch = window.innerWidth > 768 ? 100 : 0;
@@ -35,6 +38,8 @@ function MediaSection() {
     }, []);
 
     const urlImages = [
+        rol9,
+        rol10,
         rol1,
         rol2,
         rol4,
