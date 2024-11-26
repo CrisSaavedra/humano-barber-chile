@@ -1,5 +1,5 @@
 .opacityAnimation {
-    animation: opacityAnimation 1.4s ease-in-out;
+    animation: opacityAnimation 3s ease-in-out;
 }
 
 @keyframes opacityAnimation {
