@@ -8,7 +8,6 @@ import Schedule from "@/pages/schedule";
 import Footer from "@/pages/footer";
 import SideBar from "@/components/ui/sidebar";
 import Reviews from "@/pages/reviews";
-import backImage from '@/assets/backgorund-image.webp';
 
 function HomeLayout() {
 
@@ -20,7 +19,7 @@ function HomeLayout() {
                 <SideBar />
                 <Navbar />
                 <main className="font-kanit z-[-22] opacityAnimation">
-                    <div className="h-dvh bg-cover bg-center absolute w-full top-0 z-[-1] " style={{ filter: "brightness(.6)", backgroundImage: `url(${backImage})` }}></div>
+                    
                     <LandingPage />
                     <AboutUs />
                     <div className="bg-black">

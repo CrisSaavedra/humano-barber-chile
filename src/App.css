@@ -1,78 +1,151 @@
-.opacityAnimation {
+.opacityAnimation
+{
     animation: opacityAnimation 3s ease-in-out;
 }
 
-@keyframes opacityAnimation {
-    from {filter: brightness(0);}
-    to {filter: brightness(1);}
+@keyframes opacityAnimation
+{
+    from
+    {
+        filter: brightness(0);
+    }
+
+    to
+    {
+        filter: brightness(1);
+    }
 }
+
 /* ---------------------------------- */
 
-.leftToRight {
+.leftToRight
+{
     animation: leftToRight 1.5s ease-in-out;
 }
 
-@keyframes leftToRight {
-    from {transform: translateX(-160%);}
-    to {transform: translateX(0%);}
+@keyframes leftToRight
+{
+    from
+    {
+        transform: translateX(-160%);
+    }
+
+    to
+    {
+        transform: translateX(0%);
+    }
 }
 
 /* ---------------------------------- */
 
-.rightToLeft {
+.rightToLeft
+{
     animation: rightToLeft 1.5s ease-in-out;
 }
 
-@keyframes rightToLeft {
-    from {transform: translateX(160%);}
-    to {transform: translateX(0%);}
+@keyframes rightToLeft
+{
+    from
+    {
+        transform: translateX(160%);
+    }
+
+    to
+    {
+        transform: translateX(0%);
+    }
 }
 
 /* ---------------------------------- */
 
 
-.invisibleToVisile{
+.invisibleToVisile
+{
     animation: invisibleToVisile 1s ease-out;
 }
 
-@keyframes invisibleToVisile {
-    from {opacity: 0;}
-    to {opacity: 1;}
+@keyframes invisibleToVisile
+{
+    from
+    {
+        opacity: 0;
+    }
+
+    to
+    {
+        opacity: 1;
+    }
 }
 
 
-.visibleToInvisible{
+.visibleToInvisible
+{
     animation: visibleToInvisible .3s ease-out forwards;
 }
 
-@keyframes visibleToInvisible {
-    from {opacity: 1;}
-    to {opacity: 0;}
+@keyframes visibleToInvisible
+{
+    from
+    {
+        opacity: 1;
+    }
+
+    to
+    {
+        opacity: 0;
+    }
 }
 
 
 /* ---------------------------------- */
 
-.closeSideBar {
+.closeSideBar
+{
     animation: closeSideBar .5s ease-in forwards;
 }
 
-@keyframes closeSideBar {
-    from {transform: translateX(0%);}
-    to {transform: translateX(100%);}
+@keyframes closeSideBar
+{
+    from
+    {
+        transform: translateX(0%);
+    }
+
+    to
+    {
+        transform: translateX(100%);
+    }
 }
 
 /* ---------------------------------- */
 
-.openSideBar {
+.openSideBar
+{
     animation: openSideBar .5s ease-out forwards;
 }
 
-@keyframes openSideBar {
-    from {transform: translateX(100%);}
-    to {transform: translateX(0%);}
+@keyframes openSideBar
+{
+    from
+    {
+        transform: translateX(100%);
+    }
+
+    to
+    {
+        transform: translateX(0%);
+    }
 }
 
 
 
 
+:root
+{
+    --real-vh: calc(100vh - env(safe-area-inset-bottom));
+}
+
+.contenedor
+{
+    height: var(--real-vh);
+}
