@@ -1,4 +1,4 @@
-import pictureOne from '@/assets/nuevas-humano/bg-salon.jpeg.jpg';
+import pictureOne from '@/assets/nuevas-humano/local.jpg';
 
 function AboutUs() {
     return (
