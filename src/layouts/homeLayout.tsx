@@ -4,7 +4,7 @@ import AboutUs from "@/pages/aboutUs";
 import MediaSection from "@/pages/mediaSection";
 import Products from "@/pages/products";
 import MapSection from "@/pages/mapSection";
-import Schedule from "@/pages/schedule";
+// import Schedule from "@/pages/schedule";
 import Footer from "@/pages/footer";
 import Reviews from "@/pages/reviews";
 
@@ -24,7 +24,7 @@ function HomeLayout() {
                         <MediaSection />
                         <Products />
                         <MapSection />
-                        <Schedule />
+                        {/* <Schedule /> */}
                         <Reviews />
                         <Footer />
                     </div>
